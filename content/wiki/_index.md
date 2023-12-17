@@ -1,7 +1,7 @@
 ---
 title: Wiki
 date: 2023-12-16T18:43:48Z
-draft: true
+draft: false
 featuredImage: "/wiki/city-clip-art-15.png"
 ---
 
