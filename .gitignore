@@ -9,3 +9,5 @@ resources/
 
 # content/
 data/
+
+.markdownlint.yaml
