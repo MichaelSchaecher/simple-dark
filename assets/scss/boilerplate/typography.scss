@@ -1,0 +1,181 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+// Default link styles
+a {
+  font-weight: 500;
+  color: $link-color;
+  text-decoration: none;
+
+  // List transitions styles for all links.
+  // See https://developer.mozilla.org/en-US/docs/Web/CSS/transition
+
+  transition: display 0.25s ease-in-out;
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    // transform: scale(1.05);
+  }
+
+  // change the color after the link is visited
+  &:visited {
+    color: $alt-link-color;
+  }
+}
+
+// Default paragraph styles
+p {
+  margin: rem(20) 0;
+
+  // Justify the text and set the hyphens to auto.
+  text-align: justify;
+  justify-self: center;
+  hyphens: auto;
+
+  // Set media query for max-width to 800px or less.
+  @include max {
+    margin: rem(16) 0;
+  }
+}
+
+// Default heading styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family;
+  font-weight: 600;
+  color: $alt-fg-color;
+  margin: rem(30) 0 rem(24) 0;
+
+  // Set media query for max-width to 800px or less.
+  @include max {
+    margin: rem(27) 0 rem(21) 0;
+  }
+
+  // Set the heading link styles
+  &:hover .heading-link {
+    visibility: visible;
+  }
+
+  .heading-link {
+    color: $link-color;
+    visibility: hidden;
+    text-decoration: none;
+    transition: all 0.25s ease-in;
+
+    &:focus,
+    &:hover,
+    &:active {
+      text-decoration: none;
+      transform: scale(1.05);
+    }
+  }
+
+  .title-link {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+  }
+}
+
+// Heading 1 styles
+h1 {
+  font-size: rem(40);
+  line-height: rem(36);
+
+  // Set media query for max-width to 800px or less.
+  @include max {
+    font-size: rem(30);
+    line-height: rem(34);
+  }
+}
+
+// Heading 2 styles
+h2 {
+  font-size: rem(32);
+  line-height: rem(32);
+
+  // Set media query for max-width to 800px or less.
+  @include max {
+    font-size: rem(26);
+    line-height: rem(30);
+  }
+}
+
+// Heading 3 styles
+h3 {
+  font-size: rem(24);
+  line-height: rem(28);
+
+  // Set media query for max-width to 800px or less.
+  @include max {
+    font-size: rem(22);
+    line-height: rem(26);
+  }
+}
+
+// Heading 4 styles
+h4 {
+  font-size: rem(20);
+  line-height: rem(24);
+
+  // Set media query for max-width to 800px or less.
+  @include max {
+    font-size: rem(18);
+    line-height: rem(22);
+  }
+}
+
+// Heading 5 styles
+h5 {
+  font-size: rem(18);
+  line-height: rem(22);
+
+  // Set media query for max-width to 800px or less.
+  @include max {
+    font-size: rem(16);
+    line-height: rem(20);
+  }
+}
+
+// Heading 6 styles
+h6,
+p {
+  font-size: rem(16);
+  line-height: 1.15;
+}
+
+// Bold styles
+b,
+strong {
+  font-weight: 600;
+}
+
+// Italic styles
+.fab {
+  font-weight: 400;
+}
+
+// Bold italic styles
+.fas {
+  font-weight: 700;
+}
+
+// Default list styles float right
+.float-right {
+  float: right;
+}
+
+// Default list styles float left
+.float-left {
+  float: left;
+}

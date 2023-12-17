@@ -1,0 +1,203 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+article {
+  a:where(.external-link)::after {
+    @include fa-icon;
+    content: fa-content($fa-var-external-link);
+    padding-left: rem(8);
+    font-size: rem(12);
+  }
+
+  details {
+    summary {
+      cursor: pointer;
+    }
+  }
+
+  .fa-link {
+    // @include fa-icon;
+    // content: fa-content($fa-var-link);
+    // padding-left: rem(8);
+    font-size: rem(16);
+
+    // Align to the top of the line.
+    vertical-align: top;
+    color: $alt-fg-color;
+  }
+
+  footer {
+    margin: rem(48) 0;
+
+    // Center the comments on the page.
+    text-align: center;
+
+    h3 {
+      margin: rem(32) 0;
+    }
+
+    // Center the comments in the footer.
+    #post-comments,
+    #disqus_thread {
+      margin: 0 auto;
+    }
+  }
+}
+
+//
+.post {
+  .post-title {
+    margin-bottom: rem(12);
+  }
+
+  .post-meta {
+    // Center the content
+    text-align: center;
+
+    i {
+      text-align: center;
+      width: rem(16);
+      margin-left: 0;
+      margin-right: rem(8);
+    }
+
+    .authors-name {
+      transition: all 0.25s ease-in-out;
+
+      &:hover,
+      &:active {
+        font-weight: 700;
+      }
+
+      &:visited {
+        color: $alt-link-color;
+      }
+    }
+
+    .date {
+      .posted-on {
+        // Add a margin to the right of the date to separate it from reading time.
+        margin-right: rem(80);
+
+        // Set media query for max-width to 800px or less.
+        @include max {
+          margin-right: rem(24);
+        }
+      }
+    }
+  }
+}
+
+// ID Table of Contents styles.
+#TableOfContents {
+  padding: rem(32) 0;
+  font-size: rem(18);
+  line-height: 1.15;
+
+  ol {
+    li {
+      color: $alt-fg-color;
+    }
+  }
+  a {
+    color: $fg-color;
+    // font-size: rem(16);
+    // font-weight: 400;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:active {
+      color: $link-color;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  }
+}
+
+// Tags and categories should be inline-block elements to allow for link animations.
+.taxonomy-links {
+  display: inline-block;
+  margin-left: rem(8);
+  margin-right: rem(8);
+
+  .categories,
+  .tags {
+    .fa-folder,
+    .fa-tag {
+      padding-right: rem(24);
+      color: $accent-color;
+    }
+  }
+
+  a {
+    color: $alt-fg-color;
+    transition: all 0.2s ease-in-out;
+
+    &:hover,
+    &:focus {
+      font-weight: 700;
+      color: $link-color;
+    }
+  }
+}
+
+// .tag,
+// .category {
+//   display: inline-block;
+//   margin-left: rem(8);
+//   margin-right: rem(8);
+
+//   .categories {
+//     .fa-folder {
+//       padding-right: rem(48);
+//       color: red;
+//     }
+//   }
+
+//   .tags {
+//     .fa-tag {
+//       padding-right: rem(48);
+//       color: red;
+//     }
+//   }
+
+//   a {
+//     // color: gray;
+//     transition: all 0.2s ease-in-out;
+
+//     &:hover,
+//     &:focus {
+//       font-weight: 700;
+//       // color: red;
+//     }
+//   }
+// }
+
+.series {
+  padding-bottom: rem(16);
+
+  .series-title {
+    transition: all 0.25s ease-in-out;
+
+    &:hover,
+    &:active {
+      font-weight: 700;
+    }
+  }
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption p {
+  text-align: center;
+  font-style: italic;
+  font-size: rem(16);
+  margin: 0;
+}

@@ -1,0 +1,231 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+// Use ../functions/_index.scss which contains the function rem() to convert pixels to
+// rems. See https://sass-lang.com/documentation/modules/math#
+
+// .avatar img {
+//   width: rem(312);
+
+//   // Add padding to the image
+//   // padding: rem(24);
+//   // margin-top: rem(64);
+
+//   @include max {
+//     padding: rem(12);
+//     width: rem(192);
+//   }
+// }
+
+// .featured-image,
+// .error-img img {
+//   width: 100%;
+//   height: rem(256);
+
+//   @include max {
+//     width: 100%;
+//     height: rem(128);
+//   }
+// }
+
+// .error-img img {
+//   width: 100%;
+//   height: rem(256);
+
+//   @include max {
+//     width: 100%;
+//     height: rem(128);
+//   }
+// }
+
+.postlistIMG {
+  img {
+    display: block;
+    width: 100%;
+    height: rem(192);
+    align-content: center;
+    // border-radius: 32rem;
+  }
+}
+
+.underConstructionIMG {
+  img {
+    margin: 5% auto 5% auto;
+    width: auto;
+    display: block;
+    align-content: center;
+    height: auto;
+  }
+
+  .construct {
+    font-size: 24px;
+    text-align: center;
+    color: red;
+  }
+}
+
+// Move the image to the right and place the caption below it and centered.
+// Both the image and caption are in a div with the class "first-nasa-computer".
+// Text wrapping around the image is top and bottom.
+
+
+// Use hugo's built-in figure shortcode to wrap the image and caption.
+// See https://gohugo.io/content-management/shortcodes/#figure
+
+// Center the figure, image, and caption. Remember to keep the caption below the image.
+.left {
+  display: flex;
+  flex-direction: column;
+  // float: left;
+  width: 100%;
+  height: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 0;
+
+  // Padding top and bottom of 32px.
+  padding: rem(32) 0;
+
+  // The caption is 50% of the width of the figure.
+  figcaption {
+    width: 100%;
+    height: 85%;
+    p {
+      text-align: left;
+      font-size: rem(14);
+    }
+  }
+
+  @include max {
+    width: 100%;
+    height: rem(192);
+    margin-bottom: rem(80);
+
+    img {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    // The caption is 50% of the width of the figure.
+    figcaption {
+      width: 100%;
+      height: 85%;
+      p {
+        text-align: left;
+        font-size: rem(14);
+      }
+    }
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  // float: right;
+  // width: rem(400);
+  // height: rem(400);
+  width: 100%;
+  height: 50%;
+  margin: 0;
+
+  // Padding top and bottom of 32px.
+  padding: rem(32) 0;
+
+  img {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    // Align the image to the right.
+
+  }
+
+  // The caption is 50% of the width of the figure.
+  figcaption {
+    width: 100%;
+    height: 85%;
+    p {
+      margin-right: 25%;
+      text-align: right;
+      font-size: rem(14);
+    }
+  }
+
+  @include max {
+    width: 100%;
+    height: rem(192);
+    float: none;
+    margin-bottom: rem(80);
+
+    img {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    // The caption is 50% of the width of the figure.
+    figcaption {
+      width: 100%;
+      p {
+        text-align: left;
+        font-size: rem(14);
+      }
+    }
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  // width: rem(400);
+  // height: rem(400);
+  width: 100%;
+  height: 50%;
+  margin: 0;
+
+  // Padding top and bottom of 32px.
+  padding: rem(32) 0;
+
+  img {
+    width: 50%;
+    margin-left: 50%;
+    // Align the image to the right.
+
+  }
+
+  // The caption is 50% of the width of the figure.
+  figcaption {
+    width: 100%;
+    p {
+      text-align: right;
+      font-size: rem(14);
+    }
+  }
+
+  @include max {
+    width: 100%;
+    height: rem(192);
+    float: none;
+    margin-bottom: rem(80);
+
+    img {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    // The caption is 50% of the width of the figure.
+    figcaption {
+      width: 100%;
+      p {
+        text-align: left;
+        font-size: rem(14);
+      }
+    }
+  }
+}

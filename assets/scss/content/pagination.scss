@@ -1,0 +1,34 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+.pagination {
+  margin-top: rem(48);
+  text-align: center;
+  font-family: $font-family;
+
+  li {
+    display: inline;
+    text-align: center;
+    font-weight: 700;
+
+    span {
+      margin: 0;
+      text-align: center;
+      width: rem(35);
+    }
+
+    a {
+      font-weight: 300;
+
+      span {
+        margin: 0;
+        text-align: center;
+        width: rem(35);
+      }
+    }
+  }
+}

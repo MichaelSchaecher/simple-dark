@@ -1,0 +1,121 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+// Use ../functions/_index.scss which contains the function rem() to convert pixels to
+// rems. See https://sass-lang.com/documentation/modules/math#
+
+.notice {
+  border-radius: rem(4);
+  position: relative;
+  margin: rem(32) 0;
+  padding: 0 rem(12);
+  overflow: auto;
+
+  .notice-title {
+    position: relative;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: rem(4) rem(46);
+    border-bottom: 1px solid $bg-color;
+
+    i {
+      position: absolute;
+      top: 50%;
+      left: rem(24);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .notice-content {
+    display: block;
+    margin: rem(32);
+  }
+}
+
+.notice.note {
+  background-color: $bg-color-notice-note-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-note-title;
+
+    i {
+      color: $fg-color-notice-note-icon;
+    }
+  }
+}
+
+.notice.tip {
+  background-color: $bg-color-notice-tip-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-tip-title;
+
+    i {
+      color: $fg-color-notice-tip-icon;
+    }
+  }
+}
+
+.notice.example {
+  background-color: $bg-color-notice-example-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-example-title;
+
+    i {
+      color: $fg-color-notice-example-icon;
+    }
+  }
+}
+
+.notice.question {
+  background-color: $bg-color-notice-question-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-question-title;
+
+    i {
+      color: $fg-color-notice-question-icon;
+    }
+  }
+}
+
+.notice.info {
+  background-color: $bg-color-notice-info-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-info-title;
+
+    i {
+      color: $fg-color-notice-info-icon;
+    }
+  }
+}
+
+.notice.warning {
+  background-color: $bg-color-notice-warning-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-warning-title;
+
+    i {
+      color: $fg-color-notice-warning-icon;
+    }
+  }
+}
+
+.notice.error {
+  background-color: $bg-color-notice-error-content;
+
+  .notice-title {
+    background-color: $bg-color-notice-error-title;
+
+    i {
+      color: $fg-color-notice-error-icon;
+    }
+  }
+}

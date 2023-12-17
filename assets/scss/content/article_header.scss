@@ -1,0 +1,36 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+header {
+  margin-top: rem(48);
+  margin-bottom: rem(32);
+
+  h1 {
+    font-size: rem(42);
+    line-height: rem(46);
+    margin: 0;
+    color: blue;
+
+    // Center the text on the page.
+    text-align: center;
+
+    a {
+      // No underline on the title, no cursor or hover effect.
+      text-decoration: none;
+      color: $alt-fg-color;
+
+      // Set the cursor to default.
+      cursor: default;
+    }
+
+    // Set media query for max-width to 800px or less.
+    @include max {
+      font-size: rem(40);
+      line-height: rem(44);
+    }
+  }
+}

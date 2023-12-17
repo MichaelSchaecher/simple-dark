@@ -1,0 +1,35 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+// Define the look of the footer.
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: rem(16);
+  line-height: rem(40);
+
+  border-top: rem(4) solid $accent-color;
+  background-color: $alt-bg-color;
+
+  small {
+    font-size: rem(12);
+
+    // Align to the top.
+    vertical-align: top;
+  }
+
+  a {
+    color: $link-color;
+    transition: color 0.25s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+      font-weight: 700;
+    }
+  }
+}

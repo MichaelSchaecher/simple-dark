@@ -1,0 +1,16 @@
+// Import colors.
+@import "style/index";
+
+// Import default value for font size.
+@import "functions";
+
+// Import font awesome 6.5.1
+@import "fa/index";
+
+// our project needs Classic Solid, Brands, and Sharp Solid
+// @import "./fa/solid.scss";
+// @import "./fa/brands.scss";
+
+
+// Import Custom media queries mixins.
+@import "mixins";

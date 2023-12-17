@@ -1,0 +1,19 @@
+<!-- Using defined image if the page is currently under-construction -->
+<div class="not_found">
+  <!-- This is a custom variable for applying a  -->
+  {{ if .Site.Params.images.construction }} {{ with
+  .Site.Params.images.construction }}
+  <img
+    class="construction"
+    src="{{ . | relURL }}"
+    alt="Under Construction"
+    class="under-construction"
+  />
+  {{ end }} {{ else }}
+  <h1>Under Construction</h1>
+  {{ end }}
+  <p>
+    {{ i18n "page_does_not_exist" }}<br />{{ i18n "head_back" .Site.BaseURL |
+    safeHTML }}
+  </p>
+</div>

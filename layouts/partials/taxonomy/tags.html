@@ -1,0 +1,11 @@
+<div class="tax">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+  {{- range $index, $el := . -}}
+    <ul class="taxes">
+      <li class="taxing">
+        <a class="taxlin" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      </li>
+    </ul>
+  {{- end -}}
+</div>
+

@@ -1,0 +1,15 @@
+<section class="container page">
+  <article>
+    <header>
+      <!-- Only use the featured images if on is set. -->
+      {{ with .Params.featuredImage }}
+        <div class="featured-image">
+          <img src="{{ . | relURL }}" alt="Featured image" />
+        </div>
+      {{ end }}
+      <h1 class="title">{{ .Title }}</h1>
+    </header>
+
+    {{ .Content }}
+  </article>
+</section>

@@ -1,0 +1,215 @@
+baseURL: "/"
+title: Simple Back
+#theme: simple-dark
+languageCode: en
+defaultContentLanguage: en
+paginate: 20
+
+enableEmoji: true
+
+# Enable Disqus comments
+disqusShortname: blackstewie-com
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
+  highlight:
+    noClasses: false
+    tabWidth: 4
+
+params:
+  author: Michael Schaecher
+  description: Ideas about technology, software development and life.
+  keywords: blog, developer, personal
+
+  license:
+    type: MIT
+    url: /license
+
+  # Set the variables for enabling giscus comments
+  #giscus:
+  # repo: MichaelSchaecher/website
+  # repo_id: R_kgDOKa5WjQ
+  # category: General
+  # categoryID: DIC_kwDOKa5Wjc4Ca5ud
+  # mapping: url
+  # strict: 0
+  # reactionsEnabled: 1
+  # emitMetadata: 0
+  # inputPosition: top
+  # theme: purple_dark
+  # lang: en
+  #crossorigin="anonymous"
+
+  # Set the variables for enabling utterances comments
+
+  # Set an image to be used as part of the listing of blogs and posts.
+  images:
+    avatar: /images/site/logo.png
+    # #gravatar: john.doe@example.com
+
+    error: /images/site/404.png
+    construction: /images/site/construction.png
+
+    # Favicon for browsers
+    favicon: /images/site/favicon.ico
+    favicon_16: /images/site/favicon-16x16.png
+    favicon_32: /images/site/favicon-32x32.png
+
+    # Favicon for Safari and Apple touch icon (180x180)
+    apple_touch: /images/site/apple-touch-icon.png
+
+    # Favicon for Safari pinned tab
+    safari_pinned: /images/site//images/site/favicon.ico
+    mask_icon_color: "#5bbad5"
+
+    # The following is used for the site manifest. Just replace the url with your
+    # manifest url.
+    manifest: /images/site/site.webmanifest
+
+  dateFormat: January 2, 2006
+  since: 2023
+
+  # Right To Left, shift content direction for languages such as Arabic
+  # For now this is not supported.
+  # rtl: false
+
+  # Hide the toggle button, along with the associated vertical divider
+  hideColorSchemeToggle: true
+  # Series see also post count
+  maxSeeAlsoItems: 5
+  # Custom CSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
+  customSCSS:
+
+  # Custom JS
+  customJS:
+
+  # Custom remote JS files
+  customRemoteJS:
+
+  # If you want to use fathom(https://usefathom.com) for analytics, add this section
+  #fathomAnalytics:
+  #  siteID: ABCDE
+  #  serverURL: analytics.example.com # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
+
+  # If you want to use plausible(https://plausible.io) for analytics, add this section
+  #plausibleAnalytics:
+  #  domain: example.com
+  #  serverURL: analytics.example.com # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
+  #  outboundLinksTracking: true
+  #  fileDownloadsTracking: true
+
+  # If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
+  #goatCounter:
+  #  code: code
+  # If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
+  #cloudflare:
+  #  token: token
+  # If you want to use Matomo(https://matomo.org) for analytics, add this section
+  #matomo:
+  #  siteID: ABCDE # Default value is 1, overwrite this if you are cloud-hosting
+  #  serverURL: analytics.example.com # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
+  # If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+  #googleTagManager:
+  #  id: gid
+  # If you want to use Yandex Metrika(https://metrika.yandex.ru) for analytics, add this section
+  #yandexMetrika:
+  #  id: gid
+  # If you want to use Application Insights(https://azure.com/) for analytics, add this section
+  #applicationInsights:
+  #  connectionString: connectionString
+  # If you want to use microanalytics.io for analytics, add this section
+  #microAnalytics:
+  #  id: ABCDE
+  #  dnt: false
+  # If you want to use Pirsch(https://pirsch.io) for analytics, add this section
+  #pirsch:
+  #  code: ABCDE
+  # If you want to implement a Content-Security-Policy, add this section
+
+  #csp:
+  #  childsrc: [self]
+  #  fontsrc: [self, https://fonts.gstatic.com, https://cdn.jsdelivr.net/]
+  #  formaction: [self]
+  #  framesrc: [self, https://www.youtube.com]
+  #  imgsrc: [self]
+  #  objectsrc: [none]
+  #  stylesrc: [self,unsafe-inline,https://fonts.googleapis.com/,https://cdn.jsdelivr.net/]
+
+  #scriptsrc: [self,unsafe-inline,https://www.google-analytics.com,https://cdn.jsdelivr.net/]
+
+  #prefetchsrc: [self]
+  # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
+  #connectsrc: [self,https://www.google-analytics.com]
+
+  math: true
+
+  social:
+    - name: github
+      icon: fa fa-2x fa-github
+      weight: 1
+      url: https://github.com/
+    - name: Gitlab
+      icon: fa fa-2x fa-gitlab
+      weight: 2
+      url: https://gitlab.com/
+    - name: Twitter
+      icon: fa fa-2x fa-twitter
+      weight: 3
+      url: https://twitter.com/
+    - name: LinkedIn
+      icon: fa fa-2x fa-linkedin
+      weight: 4
+      url: https://www.linkedin.com/
+    - name: Medium
+      icon: fa fa-2x fa-medium
+      weight: 5
+      url: https://medium.com/
+    - name: RSS
+      icon: fa fa-2x fa-rss-square
+      weight: 6
+      url: https://myhugosite.com/
+      rel: alternate
+      type: application/rss+xml
+    - name: Facebook
+      icon: fa fa-2x fa-facebook-square
+      weight: 7
+      url: https://www.facebook.com/
+    - name: StackOverflow
+      icon: fa fa-2x fa-stack-overflow
+      weight: 8
+      url: https://stackoverflow.com/
+    - name: Instagram
+      icon: fa fa-2x fa-instagram
+      weight: 9
+      url: https://www.instagram.com/
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+  author: authors
+
+languages:
+  en:
+    languageName: us
+
+menu:
+  main:
+    - name: Posts
+      weight: 1
+      url: /posts/
+    - name: Projects
+      weight: 2
+      url: projects/
+    - name: Wiki
+      weight: 3
+      url: wiki/
+    - name: About
+      weight: 4
+      url: /about/

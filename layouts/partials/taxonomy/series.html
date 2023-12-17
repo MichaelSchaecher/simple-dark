@@ -1,0 +1,22 @@
+{{ $currentPageUrl := .RelPermalink }}
+<!-- This is the URL of the current page -->
+
+<!-- What to do if the parameter series is defined? -->
+{{ if .Params.series }}
+  {{ range .Params.series }}
+    {{ $name := . | anchorize }}
+    {{ $series := index $.Site.Taxonomies.series $name }}
+    {{ if gt (len $series.Pages) 1 }}
+      <div class="series">
+        <i class="fa fa-book" aria-hidden="true"></i>
+        <!-- Link to servies page -->
+        {{ i18n "series" }}: &nbsp;
+        <a
+          class="series-title"
+          href="{{ "series/" | relLangURL }}{{ $name | urlize }}"
+          >{{ $name }}</a
+        >
+      </div>
+    {{ end }}
+  {{ end }}
+{{ end }}

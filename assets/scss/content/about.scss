@@ -1,0 +1,62 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+.about {
+  // Align both vertically
+  // display: flex;
+  margin: rem(72) auto;
+
+  // padding-top: rem(48);
+
+  // Align the text to the center
+  text-align: center;
+  padding-top: 0;
+  top: rem(42);
+  position: relative;
+
+  h2 {
+    font-size: rem(24);
+    margin-top: 0;
+
+    @include max {
+      font-size: rem(20);
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      position: relative;
+
+
+      .fa-icon {
+
+        i {
+          margin-right: rem(24);
+          font-size: rem(32);
+          transition: all 0.2s ease-in-out;
+
+          &:hover,
+          &:focus,
+          &:active {
+            // font-size: rem(32);
+            cursor: pointer;
+            transform: scale(1.5);
+          }
+
+          @include max {
+            font-size: rem(20);
+          }
+        }
+      }
+    }
+  }
+}

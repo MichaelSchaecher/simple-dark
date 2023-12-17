@@ -1,0 +1,14 @@
+<!-- Use button for both the previous and next post -->
+<div class="prev-next">
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
+  {{ with .NextInSection }}
+    <button class="next" onclick="location.href='{{ .Permalink | safeURL }}'">
+      <i class="fa fa-backward"></i>
+    </button>
+  {{ end }}
+  {{ with .PrevInSection }}
+    <button class="prev" onclick="location.href='{{ .Permalink | safeURL }}'">
+      <i class="fa fa-forward"></i>
+    </button>
+  {{ end }}
+</div>

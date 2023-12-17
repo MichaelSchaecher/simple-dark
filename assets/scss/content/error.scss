@@ -1,0 +1,42 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+@use "../util/index" as *;
+
+.not_found {
+  // Align the text vertically and horizontally
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: rem(80);
+
+  h1 {
+    margin-top: rem(64);
+    margin-bottom: rem(8);
+    font-size: rem(48);
+
+    @include max {
+      font-size: rem(32);
+    }
+  }
+
+  h2 {
+    margin-top: rem(32);
+    // margin-bottom: rem(52);
+    font-size: rem(27);
+
+    @include max {
+      font-size: rem(20);
+    }
+  }
+
+  // Override the praghraph styles from typography.scss
+  p {
+    text-align: center;
+  }
+}

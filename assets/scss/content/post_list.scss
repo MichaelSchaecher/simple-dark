@@ -1,0 +1,133 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+.blogging {
+  margin-top: rem(52);
+  list-style: none;
+  border-radius: rem(8);
+  margin-bottom: rem(20);
+  padding: rem(4) rem(32);
+
+  // Make the list scrollable and set the max-height to 256px.
+  overflow-y: auto;
+  height: rem(280);
+
+  // Hide the scrollbar.
+  scrollbar-width: none;
+
+  @include max {
+    margin-top: rem(48);
+
+    // Padding left and right should be 2px top and bottom should be 8px.
+    padding: rem(80) rem(2);
+
+    // Set the max-height to 128px.
+    max-height: rem(192);
+  }
+
+  li {
+    margin-bottom: rem(10);
+
+    .date {
+      text-align: left;
+      margin-right: rem(32);
+      font-size: rem(20);
+
+      @include max {
+        display: block;
+        text-align: left;
+        font-size: rem(14);
+      }
+    }
+
+    .title {
+      font-size: rem(18);
+      float: right;
+      color: $fg-color;
+      font-family: $font-family;
+      font-weight: 700;
+
+      &:hover,
+      &:focus {
+        color: $link-color;
+        text-decoration: none;
+      }
+
+      @include max {
+        font-size: rem(14);
+        display: block;
+        float: left;
+      }
+    }
+  }
+}
+
+// This is a taxonomy list and needs to be styled differently from the post list.
+// Use a button instead of a link for the taxonomy list and buttons need to be
+// horizontally centered.
+.taxonomy {
+  list-style: none;
+  margin: rem(48) auto;
+  padding: 0;
+
+  li {
+    margin-left: rem(10);
+    display: inline-block;
+    position: relative;
+
+
+    button {
+      margin-bottom: rem(10);
+      font-size: rem(18);
+      color: $fg-color;
+      font-family: $font-family;
+      font-weight: 700;
+      border: none;
+      border-radius: rem(4);
+      background-color: $bg-color;
+
+      width: rem(128);
+      height: rem(40);
+
+      transition: all 0.25s ease-in-out;
+
+      &:hover,
+      &:focus {
+
+        a {
+          color: $fg-color;
+          text-decoration: none;
+        }
+
+        background-color: $link-color;
+        transform: scale(1.1);
+        cursor: pointer;
+
+      }
+    }
+
+    @include max {
+      button {
+        width: rem(96);
+        height: rem(32);
+        font-size: rem(14);
+      }
+    }
+  }
+}
+
+ul:not(.pagination, .taxonomy) {
+  li {
+    @include max {
+      display: flex;
+      flex-direction: column;
+      float: none;
+      margin-left: 30%;
+
+    }
+  }
+}

@@ -1,0 +1,36 @@
+// Tags and categories should be inline-block elements to allow for link animations.
+
+.taxonomy-links {
+  padding-top: rem(16);
+}
+
+.tax {
+    margin: rem(8) 0;
+    font-size: rem(16);
+    font-weight: 600;
+    color: $alt-fg-color;
+
+    .taxes {
+        display: inline-block;
+        margin: 0;
+        list-style: square;
+
+      .taxing {
+
+        .taxlin {
+          color: $alt-fg-color;
+          transition: all 0.25s ease-in-out;
+
+          &:hover,
+          &:focus {
+            color: $link-color;
+            font-weight: 700;
+            font-size: rem(18);
+
+            // Move to the right.
+            margin-left: rem(8);
+          }
+        }
+      }
+    }
+  }
