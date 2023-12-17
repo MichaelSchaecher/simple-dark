@@ -1,0 +1,49 @@
+# YAML config file for Hugo
+# See https://gohugo.io/getting-started/configuration/
+
+# Base URL of the site
+baseURL: /
+languageCode: en-us
+title: "Simple Dark"
+
+# Enable Hugo's built-in LiveReload server
+watch: true
+
+# Enable Hugo's Fast Render mode
+# https://gohugo.io/news/0.56.0-relnotes/#fast-render-mode-by-default
+renderToDisk: true
+
+# Enable Hugo's Static Assets Processing Pipeline
+enableRobotsTXT: true
+
+# Enable Hugo's Built-in Sitemap Generator
+enableEmoji: true
+
+# Enable Hugo's Built-in Sitemap Generator
+enableSitemap: true
+
+# Parameters for the Hugo Static Assets Processing Pipeline
+# https://gohugo.io/hugo-pipes/
+params:
+  author: Michael Schaecher
+  description: "A simple, dark theme for Hugo."
+  keywords: theme, dark, simple, hugo, static site generator
+
+  # Default date format for posts
+  dateFormat: "January 2, 2006"
+  since: 2023
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 2
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 3
