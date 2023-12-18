@@ -10,8 +10,8 @@ tags:
 categories:
   - new
 series:
-externalLink: "https://github.com/MichaelSchaecher/website/"
-draft: true
+externalLink: "https://github.com/MichaelSchaecher/simple-dark/"
+draft: false
 weight: 20
 featuredImage: ""
 ---
