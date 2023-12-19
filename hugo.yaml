@@ -1,5 +1,5 @@
 baseURL: "/"
-title: Simple Back
+title: Simple Dark
 #theme: simple-dark
 languageCode: en
 defaultContentLanguage: en
@@ -73,6 +73,11 @@ params:
     manifest: /images/site/site.webmanifest
 
   dateFormat: January 2, 2006
+
+  # Set timezone to display dates
+  # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  # timeZone: America/Boise
+
   since: 2023
 
   # Right To Left, shift content direction for languages such as Arabic
@@ -163,15 +168,15 @@ params:
       weight: 3
       url: https://twitter.com/
     - name: LinkedIn
-      icon: fa fa-2x fa-linkedin
+      icon: fa fa-2x fa-linkedin-square
       weight: 4
       url: https://www.linkedin.com/
     - name: Medium
-      icon: fa fa-2x fa-medium
+      icon: fa fa-2x fa-medium-square
       weight: 5
       url: https://medium.com/
     - name: RSS
-      icon: fa fa-2x fa-rss-square
+      icon: fa fa-2x fa-rss
       weight: 6
       url: https://myhugosite.com/
       rel: alternate
@@ -188,6 +193,10 @@ params:
       icon: fa fa-2x fa-instagram
       weight: 9
       url: https://www.instagram.com/
+    - name: reddit
+      icon: fa fa-2x fa-reddit
+      weight: 10
+      url: https://www.reddit.com/
 
 taxonomies:
   category: categories

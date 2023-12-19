@@ -1,15 +1,17 @@
 ---
-title: {{ replace .File.ContentBaseName "-" " " | title }}
+title: Image Management
 # Set date to Mountain Standard Time. Example: 2023-12-17T20:01:00-07:00
-date: {{ .Date }}
+date: 2023-12-17T21:04:23-07:00
 description: ""
 slug: ""
 authors:
-  - John Doe
+  - Michael Schaecher
 tags:
-  - new
+  - images
+  - scss
+  - shortcodes
 categories:
-  - new
+  - images control
 externalLink: ""
 series:
 draft: true
