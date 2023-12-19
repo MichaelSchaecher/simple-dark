@@ -1,35 +1,63 @@
 {{ with .Site.Params.social }}
-  <ul>
-    {{ range sort . "weight" }}
-      {{ if .icon }}
-        <li>
-          <!--
+<ul class="social-order">
+  {{ range sort . "weight" }} {{ if .icon }}
+  <li class="socials">
+    <!--
             Define the class for all social links so that they can be set without effecting
             any other fa-icons for the website.
           -->
-          <a
-            href="{{ .url | safeURL }}"
-            aria-label="{{ .name }}"
-            class="fa-icon"
-            {{ if .rel }}rel="{{ .rel }}"{{ end }}
-            {{ if .target }}target="{{ .target }}"{{ end }}
-            {{ if .type }}type="{{ .type }}"{{ end }}
-          >
-            <i class="{{ .icon }}" aria-hidden="false"></i>
-          </a>
-        </li>
-      {{ else }}
-        <li>
-          <a
-            href="{{ .url | safeURL }}"
-            aria-label="{{ .name }}"
-            class="{{ .name }}"
-            {{ if .rel }}rel="{{ .rel }}"{{ end }}
-            {{ if .target }}target="{{ .target }}"{{ end }}
-            >{{ .name }}</a
-          >
-        </li>
-      {{ end }}
-    {{ end }}
-  </ul>
+    <a
+      href="{{ .url | safeURL }}"
+      aria-label="{{ .name }}"
+      class="fa-icon"
+      {{
+      if
+      .rel
+      }}rel="{{ .rel }}"
+      {{
+      end
+      }}
+      {{
+      if
+      .target
+      }}target="{{ .target }}"
+      {{
+      end
+      }}
+      {{
+      if
+      .type
+      }}type="{{ .type }}"
+      {{
+      end
+      }}
+    >
+      <i class="{{ .icon }}" aria-hidden="false"></i>
+    </a>
+  </li>
+  {{ else }}
+  <li class="socials">
+    <a
+      href="{{ .url | safeURL }}"
+      aria-label="{{ .name }}"
+      class="{{ .name }}"
+      {{
+      if
+      .rel
+      }}rel="{{ .rel }}"
+      {{
+      end
+      }}
+      {{
+      if
+      .target
+      }}target="{{ .target }}"
+      {{
+      end
+      }}
+      >{{ .name }}</a
+    >
+  </li>
+  {{ end }} {{ end }}
+</ul>
 {{ end }}

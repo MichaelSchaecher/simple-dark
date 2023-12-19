@@ -27,18 +27,14 @@
     }
   }
 
-  ul {
+  .social-order {
     list-style: none;
-    margin: 0;
-    padding: 0;
 
-    li {
+    .socials {
       display: inline-block;
       position: relative;
 
-
       .fa-icon {
-
         i {
           margin-right: rem(24);
           font-size: rem(32);
@@ -56,6 +52,11 @@
             font-size: rem(20);
           }
         }
+      }
+
+      // Prevent small screens from stacking
+      @include max {
+        margin: rem(8) 0;
       }
     }
   }
