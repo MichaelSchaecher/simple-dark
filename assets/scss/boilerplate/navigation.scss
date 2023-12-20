@@ -55,9 +55,7 @@
       background-color: $bg-color;
       border-top: solid rem(2) $alt-bg-color;
       border-bottom: solid rem(2) $alt-bg-color;
-      transition:
-        opacity 0.25s,
-        max-height 0.15s linear;
+      transition: opacity 0.25s, max-height 0.15s linear;
     }
 
     .nav-item {

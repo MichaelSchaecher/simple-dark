@@ -65,7 +65,7 @@ params:
     apple_touch: /images/site/apple-touch-icon.png
 
     # Favicon for Safari pinned tab
-    safari_pinned: /images/site//images/site/favicon.ico
+    safari_pinned: /images/site/favicon.ico
     mask_icon_color: "#5bbad5"
 
     # The following is used for the site manifest. Just replace the url with your
@@ -168,7 +168,7 @@ params:
       weight: 3
       url: https://twitter.com/
     - name: LinkedIn
-      icon: fa fa-2x fa-linkedin-square
+      icon: fa fa-2x fa-linkedin
       weight: 4
       url: https://www.linkedin.com/
     - name: Medium
@@ -182,7 +182,7 @@ params:
       rel: alternate
       type: application/rss+xml
     - name: Facebook
-      icon: fa fa-2x fa-facebook-square
+      icon: fa fa-2x fa-facebook-official
       weight: 7
       url: https://www.facebook.com/
     - name: StackOverflow
@@ -194,7 +194,7 @@ params:
       weight: 9
       url: https://www.instagram.com/
     - name: reddit
-      icon: fa fa-2x fa-reddit
+      icon: fa fa-2x fa-reddit-alien
       weight: 10
       url: https://www.reddit.com/
 

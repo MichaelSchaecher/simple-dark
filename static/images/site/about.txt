@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Jura
-- Font Author: Copyright 2019 The Jura Project Authors (https://github.com/ossobuffo/jura)
-- Font Source: http://fonts.gstatic.com/s/jura/v31/z7NOdRfiaC4Vd8hhoPzfb5vBTP266quhTfmrH_rt.ttf
+- Font Title: K2D
+- Font Author: Copyright 2018 The K2D Project Authors (https://github.com/cadsondemak/K2D)
+- Font Source: http://fonts.gstatic.com/s/k2d/v11/J7aenpF2V0Err4EJlJw85ppSGw.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

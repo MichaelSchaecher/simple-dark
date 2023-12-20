@@ -4,12 +4,8 @@
 // Import default value for font size.
 @import "functions";
 
-// Import font awesome 6.5.1
-@import "fork/index";
-
-// our project needs Classic Solid, Brands, and Sharp Solid
-// @import "./fa/solid.scss";
-// @import "./fa/brands.scss";
+// Import Fork Awesome icons fonts.
+@import "fa/index";
 
 // Import Custom media queries mixins.
 @import "mixins";
