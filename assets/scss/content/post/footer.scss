@@ -1,0 +1,14 @@
+footer {
+  // Center the comments on the page.
+  text-align: center;
+
+  h3 {
+    margin: rem(32) 0;
+  }
+
+  // Center the comments in the footer.
+  #post-comments,
+  #disqus_thread {
+    margin: rem(42) auto;
+  }
+}

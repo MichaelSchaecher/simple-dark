@@ -1,0 +1,37 @@
+// Previous and next buttons
+.prev-next {
+  padding: rem(48) 0;
+
+  .prev,
+  .next {
+    // Fixed width and height
+    width: rem(100);
+    height: rem(32);
+
+    border: none;
+    border-radius: rem(4);
+    transition: all 0.25s ease-in-out;
+    text-decoration: none;
+    color: $link-color;
+    background-color: $bg-color;
+    margin: rem(8);
+    font-size: rem(16);
+    line-height: 1.5;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $button-bg-color;
+      color: $fg-color;
+      transform: scale(1.1);
+    }
+  }
+
+  .prev {
+    float: right;
+  }
+  .next {
+    float: left;
+  }
+}

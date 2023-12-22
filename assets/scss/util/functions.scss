@@ -1,0 +1,12 @@
+// Functions
+// --------------------------
+
+// Helper function which adds quotes to preserve unicode values in CSS output.
+//
+// See: https://github.com/sass/sass/issues/1395
+// See: https://stackoverflow.com/questions/30421570/sass-unicode-escape-is-not-preserved-in-css-file
+
+// Define a function to calculate the font default size of 16px to 1rem.
+@function rem($pixels) {
+  @return ($pixels / 16) * 1rem;
+}

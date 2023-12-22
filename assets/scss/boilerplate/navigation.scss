@@ -1,0 +1,192 @@
+// This SCSS file is used for the body tag and some base styles for the site.
+
+// Path: assets/scss/base/body.scss
+// Compare this snippet from themes/hugo-coder/assets/scss/_base.scss:
+
+// Inherit box-sizing from html
+
+#nav {
+  // Keep the nav from scrolling with the page.
+  position: fixed;
+  line-height: rem(40);
+  top: 0;
+  z-index: 10;
+
+  // The nav bar needs to stay within the wrapper and centered.
+  width: 100%;
+  max-width: rem(1080);
+
+  // Set the background color of the nav bar.
+  background-color: $alt-bg-color;
+  border-bottom: solid rem(4) $accent-color;
+
+  .nav-title {
+    letter-spacing: rem(2);
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $fg-color;
+
+    margin-left: rem(16);
+
+    // There is no need to underline the title in the nav bar; or change the color
+    // on hover or focus.
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  .nav-list {
+    float: right;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    @include max {
+      position: relative;
+      top: rem(6);
+      right: 0;
+      z-index: 5;
+      visibility: hidden;
+      opacity: 0;
+      padding: 0;
+      width: 100%;
+      background-color: $bg-color;
+      border-top: solid rem(2) $alt-bg-color;
+      border-bottom: solid rem(2) $alt-bg-color;
+      transition: opacity 0.25s, max-height 0.15s linear;
+    }
+
+    .nav-item {
+      float: left;
+      margin: 0;
+      position: relative;
+      font-family: "Black Ops One";
+      font-weight: 600;
+
+      @include max {
+        float: none !important;
+        text-align: center;
+
+        a,
+        span {
+          line-height: rem(56);
+        }
+      }
+
+      .nav-link {
+        display: inline-block;
+        border-radius: rem(4);
+        font-size: rem(16);
+        font-family: "Black Ops One";
+        font-weight: 600;
+        color: $fg-color;
+        margin-right: rem(16);
+
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+          color: $link-color;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .separator {
+      @include max {
+        display: none;
+      }
+    }
+
+    .menu-separator {
+      @include max {
+        border-top: rem(2) solid $fg-color;
+        margin: 0 rem(96);
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #menu-toggle {
+    display: none;
+
+    @include max {
+      display: initial;
+      position: relative;
+      left: -99999px;
+      opacity: 0;
+
+      &:checked + label > i {
+        color: $bg-color;
+      }
+
+      &:checked + label + ul {
+        visibility: visible;
+        opacity: 50;
+        width: rem(128);
+
+        // Set the background color with transparency.
+        background-color: $bg-color;
+
+        // Set below the nav bar and to the right.
+        position: absolute;
+        top: rem(40);
+        transition: all;
+
+        .nav-link {
+          color: $fg-color;
+          transition: all 0.25s ease-in-out;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $link-color;
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      &:focus-visible + label {
+        outline-style: auto;
+      }
+    }
+  }
+
+  .menu-button {
+    display: none;
+
+    @include max {
+      position: relative;
+      display: block;
+      font-size: rem(24);
+      font-weight: 400;
+    }
+
+    i {
+      &:hover,
+      &:focus {
+        color: $fg-color;
+      }
+    }
+  }
+
+  i {
+    color: $fg-color;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $link-color;
+    }
+  }
+
+  // Some items in the nav bar change do to screen size.
+  @include max {
+    height: rem(56);
+  }
+}

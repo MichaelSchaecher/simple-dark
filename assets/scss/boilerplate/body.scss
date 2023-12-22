@@ -1,0 +1,51 @@
+/* Idea from coder-coder that the main scss file should be called boilerplate.scss
+ https://coder-coder.com/organizing-your-css/
+
+ Path: assets/scss/boilerplate.scss
+ Compare this snippet from assets/scss/utils/_index.scss:
+ /*!
+*/
+
+/*
+  This theme is based on Hugo-Coder by Luiz DeMilon, which is a pretty barebones theme making
+  it a great starting point for a theme. I've added some of my own styles to help make it a bit
+  more complete.
+*/
+
+// What to do before and after loading the page.
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: rem(16);
+
+  // Hide the scrollbar to prevent layout shifting to the left and look off centered.
+  scrollbar-width: none;
+}
+
+/*
+  The body is the main container for the page and should only contain some basic styles.
+*/
+body {
+  color: $fg-color;
+  background-color: $bg-color;
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: rem(20);
+
+  // The body should have any padding or margins.
+  margin: 0;
+
+  @include max {
+    font-size: rem(14);
+    line-height: rem(18);
+  }
+}
+
+iframe[src*="disqus"] {
+  color-scheme: light;
+}

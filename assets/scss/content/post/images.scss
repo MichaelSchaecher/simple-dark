@@ -1,0 +1,141 @@
+// Move the image to the right and place the caption below it and centered.
+// Both the image and caption are in a div with the class "first-nasa-computer".
+// Text wrapping around the image is top and bottom.
+
+// Use hugo's built-in figure shortcode to wrap the image and caption.
+// See https://gohugo.io/content-management/shortcodes/#figure
+
+// Center the figure, image, and caption. Remember to keep the caption below the image.
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  margin: rem(24);
+
+  img {
+    width: 50%;
+    margin-right: 50%;
+    // Align the image to the right.
+  }
+
+  // The caption is 50% of the width of the figure.
+  figcaption {
+    margin-top: rem(4);
+    p {
+      text-align: left;
+      font-size: rem(14);
+    }
+  }
+
+  @include max {
+    width: 100%;
+    height: rem(192);
+    margin: rem(24) auto rem(80) auto;
+
+    img {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    // The caption is 50% of the width of the figure.
+    figcaption {
+      p {
+        text-align: right;
+        font-size: rem(14);
+      }
+    }
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  margin: rem(24) auto;
+
+  img {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    // Align the image to the right.
+  }
+
+  // The caption is 50% of the width of the figure.
+  figcaption {
+    margin-top: rem(4);
+    p {
+      // margin-right: 25%;
+      text-align: center;
+      font-size: rem(14);
+    }
+  }
+
+  @include max {
+    width: 100%;
+    height: rem(192);
+    float: none;
+    margin-bottom: rem(80);
+
+    img {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    // The caption is 50% of the width of the figure.
+    figcaption {
+      p {
+        text-align: right;
+        font-size: rem(14);
+      }
+    }
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 100%;
+  height: 50%;
+  margin: rem(24);
+
+  img {
+    width: 50%;
+    margin-left: 50%;
+    // Align the image to the right.
+  }
+
+  // The caption is 50% of the width of the figure.
+  figcaption {
+    margin-top: rem(4);
+    p {
+      text-align: right;
+      font-size: rem(14);
+    }
+  }
+
+  @include max {
+    width: 100%;
+    height: rem(192);
+    float: none;
+    margin: rem(24) auto rem(80) auto;
+
+    img {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    // The caption is 50% of the width of the figure.
+    figcaption {
+      p {
+        text-align: right;
+        font-size: rem(14);
+      }
+    }
+  }
+}
