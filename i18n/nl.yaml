@@ -1,0 +1,45 @@
+categories:
+  one: categorie
+  other: categorieën
+tags:
+  one: label
+  other: labels
+series:
+  one: serie
+  other: series
+authors:
+  one: auteur
+  other: auteurs
+posts:
+  other: berichten
+reading_time:
+  one: "leestijd: 1 minuut"
+  other: "leestijd: {{ .Count }} minuten"
+page_not_found:
+  other: Pagina niet gevonden
+page_does_not_exist:
+  other: Sorry, deze pagina bestaat niet.
+head_back:
+  other: U kunt terugkeren naar de <a href="{{ . }}">thuispagina</a>.
+licensed_under:
+  other: onder
+powered_by:
+  other: Aangedreven door
+see_also:
+  other: Zie ook in
+note:
+  other: notitie
+tip:
+  other: tip
+example:
+  other: voorbeeld
+question:
+  other: vraag
+info:
+  other: info
+warning:
+  other: waarschuwing
+error:
+  other: fout
+link_to_heading:
+  other: Link naar kop

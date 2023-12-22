@@ -1,0 +1,45 @@
+categories:
+  one: Kategorie
+  other: Categories
+tags:
+  one: Tag
+  other: Tags
+series:
+  one: Série
+  other: Series
+authors:
+  one: Author
+  other: Authors
+posts:
+  other: Posts
+reading_time:
+  one: "Čtení: 1 min"
+  other: "Čtení: {{ . Počet }} min"
+page_not_found:
+  other: Stránka nenalezena
+page_does_not_exist:
+  other: Omlouváme se, stránka nebyla nalezena.
+head_back:
+  other: Můžete se vrátit na <a href="{{ . }}">homepage</a>.
+licensed_under:
+  other: pod
+powered_by:
+  other: Stránka používá
+see_also:
+  other: Podívejte se také na
+note:
+  other: note
+tip:
+  other: tip
+example:
+  other: example
+question:
+  other: question
+info:
+  other: info
+warning:
+  other: warning
+error:
+  other: error
+link_to_heading:
+  other: Link to heading
