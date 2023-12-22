@@ -1,0 +1,16 @@
+<!-- Use the following to preload the fonts -->
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+<!--
+  Use default scss transpiler to generate the css file until I fix the issue with ForkAwesome unable
+  to use dart-sass transpiler because of how it handles the @font-face directive.
+-->
+{{ if .Site.IsServer }}
+  {{ $cssOpts := (dict "targetPath" "css/simple-dark.css" "enableSourceMap" true ) }}
+  {{ $styles := resources.Get "scss/simple-dark.scss" | resources.ExecuteAsTemplate "style.simple-dark.css" . | toCSS $cssOpts }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+{{ else }}
+  {{ $cssOpts := (dict "targetPath" "css/simple-dark.css" ) }}
+  {{ $styles := resources.Get "scss/simple-dark.scss" | resources.ExecuteAsTemplate "style.simple-dark.css" . | toCSS $cssOpts | fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+{{ end }}

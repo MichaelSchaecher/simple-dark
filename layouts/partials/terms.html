@@ -1,23 +1,29 @@
-{{- /*
-For a given taxonomy, renders a list of terms assigned to the page.
+<section class="container taxonomy">
+  <header class="pagination">
 
-@context {page} page The current page.
-@context {string} taxonomy The taxonony.
+    <!-- Only use the featured images if on is set. -->
+    {{ with .Params.featuredImage }}
+      <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
+    {{ end }}
 
-@example: {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-*/}}
-
-{{- $page := .page }}
-{{- $taxonomy := .taxonomy }}
-
-{{- with $page.GetTerms $taxonomy }}
-  {{- $label := (index . 0).Parent.LinkTitle }}
-  <div>
-    <div>{{ $label }}:</div>
-    <ul>
-      {{- range . }}
-        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-      {{- end }}
-    </ul>
-  </div>
-{{- end }}
+    <h1 class="title">
+     {{- if eq .Kind "term" -}} {{- i18n .Data.Plural | title -}} {{- print
+      ": " -}} {{- end -}} {{- i18n (lower .Title) | default .Title | title
+      -}}
+    </h1>
+  </header>
+  {{ .Content }}
+  <ul class="taxonomy">
+    {{ $type := .Type }} {{ range $key, $value := .Data.Terms.Alphabetical }} {{
+    $name := .Name }} {{ $count := .Count }} {{ with $.Site.GetPage (printf
+    "/%s/%s" $type $name) }}
+    <li>
+      <!-- Use a button -->
+      <button class="taxonomy-element">
+        <a class="taxonomy-title" href="{{ .Permalink }}">{{ .Name }}</a>
+        <sup>{{ $count }}</sup>
+      </button>
+    </li>
+    {{ end }} {{ end }}
+  </ul>
+</section>
