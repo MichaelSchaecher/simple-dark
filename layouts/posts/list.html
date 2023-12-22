@@ -1,26 +1,18 @@
-{{ define "title" }}
-  {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
-{{ end }}
-{{ define "content" }}
-  <section class="container list">
+{{ define "title" }} {{ title (i18n (lower .Title)) | default .Title }} · {{
+.Site.Title }} {{ end }} {{ define "content" }}
+<section class="container list">
+  <header class="pagination">
+    <!-- Only use the featured images if on is set. -->
+    {{ with .Params.featuredImage }}
+    <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
+    {{ end }}
+    <h1 class="title">{{ title (i18n (lower .Title)) | default .Title }}</h1>
+  </header>
+  {{ .Content }}
+  <ul class="blogging">
+    {{- range .Paginator.Pages -}}{{- .Render "li" -}}{{- end -}}
+  </ul>
 
-    <header class="pagination">
-
-      <!-- Only use the featured images if on is set. -->
-      {{ with .Params.featuredImage }}
-        <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
-      {{ end }}
-      <h1 class="title">
-        <a class="title-link" href="{{ .Permalink | safeURL }}">
-          {{ title (i18n (lower .Title)) | default .Title }}
-        </a>
-      </h1>
-    </header>
-    {{ .Content }}
-    <ul class="blogging">
-      {{- range .Paginator.Pages -}}{{- .Render "li" -}}{{- end -}}
-    </ul>
-
-    {{ partial "pagination.html" . }}
-  </section>
+  {{ partial "pagination.html" . }}
+</section>
 {{ end }}

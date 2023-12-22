@@ -6,6 +6,8 @@ draft: False
 
 ## MIT License
 
+<!-- Copyright <small>&copy;</small> 2023 Michael Schaecher -->
+
 Copyright <small>&copy;</small> 2023 Michael Schaecher
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

@@ -8,7 +8,7 @@ paginate: 20
 enableEmoji: true
 
 # Enable Disqus comments
-disqusShortname: blackstewie-com
+# disqusShortname: blackstewie-com
 
 markup:
   goldmark:
@@ -168,11 +168,11 @@ params:
       weight: 3
       url: https://twitter.com/
     - name: LinkedIn
-      icon: fa fa-2x fa-linkedin
+      icon: fa fa-2x fa-linkedin-square
       weight: 4
       url: https://www.linkedin.com/
     - name: Medium
-      icon: fa fa-2x fa-medium-square
+      icon: fa fa-2x fa-medium
       weight: 5
       url: https://medium.com/
     - name: RSS

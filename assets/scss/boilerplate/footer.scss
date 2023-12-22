@@ -12,15 +12,11 @@
   font-size: rem(16);
   line-height: rem(40);
 
+  // Reset the top and bottom margin:
+  margin: 0 auto;
+
   border-top: rem(4) solid $accent-color;
   background-color: $alt-bg-color;
-
-  small {
-    font-size: rem(12);
-
-    // Align to the top.
-    vertical-align: top;
-  }
 
   a {
     color: $link-color;

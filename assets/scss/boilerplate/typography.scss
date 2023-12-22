@@ -147,6 +147,14 @@ h5 {
   }
 }
 
+small {
+  font-size: rem(12);
+  line-height: rem(16);
+
+  // Align to the top.
+  vertical-align: top;
+}
+
 // Heading 6 styles
 h6,
 p {

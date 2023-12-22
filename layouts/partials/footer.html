@@ -1,14 +1,16 @@
 <footer class="footer">
 
   <!--  -->
-  <div id="footer-text">
+  <p id="footer-text">
     Copyright
 
     <!-- Use span with java script to update the year -->
     <span id="-java-year"></span>
 
+    <i class="fa fa-copyright"></i>
+
     <!-- Just in case java is disabled -->
-    <noscript>{{ now.Year }}</noscript><small>&copy;</small>
+    <noscript>{{ now.Year }}</noscript>
 
     <!-- If there is a author, display it -->
     {{ with .Site.Params.author }} by {{ . }} {{ end }}
@@ -27,7 +29,7 @@
     <a href="https://gohugo.io/" rel="nofollow">Hugo</a>
     &plus;
     <a href="https://github.com/MichaelSchaecher/simple-dark" rel="nofollow">Simple Dark</a>
-  </div>
+    </p>
 
   <!--  -->
   <script>
