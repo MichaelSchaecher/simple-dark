@@ -168,7 +168,7 @@ params:
       weight: 3
       url: https://twitter.com/
     - name: LinkedIn
-      icon: fa fa-2x fa-linkedin-square
+      icon: fa fa-2x fa-linkedin
       weight: 4
       url: https://www.linkedin.com/
     - name: Medium
@@ -182,7 +182,7 @@ params:
       rel: alternate
       type: application/rss+xml
     - name: Facebook
-      icon: fa fa-2x fa-facebook-official
+      icon: fa fa-2x fa-facebook-square
       weight: 7
       url: https://www.facebook.com/
     - name: StackOverflow
