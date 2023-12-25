@@ -6,7 +6,7 @@
   </a>
 
   <!-- Menu button multiligual -->
-  {{ if or .Site.Menus.main .Site.IsMultiLingual }}
+  {{ if .Site.Menus.main }}
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle">
       <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
@@ -23,25 +23,6 @@
               >{{ .Name }}</a
             >
           </li>
-        {{ end }}
-      {{ end }}
-      {{ if .Site.IsMultiLingual }}
-        {{ $node := . }}
-        {{ .Scratch.Set "separator" true }}
-        {{ range (default .Site.Home.AllTranslations .Translations) }}
-          {{ if ne $.Site.Language .Language }}
-            {{ if $node.Scratch.Get "separator" }}
-              <li class="nav-item menu-separator">
-                <span>|</span>
-              </li>
-              {{ $node.Scratch.Set "separator" false }}
-            {{ end }}
-            <li class="nav-item">
-              <a href="{{ .RelPermalink }}"
-                >{{ .Language.LanguageName | emojify }}</a
-              >
-            </li>
-          {{ end }}
         {{ end }}
       {{ end }}
     </ul>
