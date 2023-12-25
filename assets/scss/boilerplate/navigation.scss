@@ -23,6 +23,7 @@
   .nav-title {
     letter-spacing: rem(2);
     text-transform: uppercase;
+    font-family: "K2D";
     font-weight: 800;
     color: $fg-color;
 
@@ -62,7 +63,7 @@
       float: left;
       margin: 0;
       position: relative;
-      font-family: "Black Ops One";
+      font-family: "K2D";
       font-weight: 600;
 
       @include max {
@@ -79,7 +80,7 @@
         display: inline-block;
         border-radius: rem(4);
         font-size: rem(16);
-        font-family: "Black Ops One";
+        font-family: "K2D";
         font-weight: 600;
         color: $fg-color;
         margin-right: rem(16);
@@ -90,6 +91,10 @@
           text-decoration: none;
           color: $link-color;
           transform: scale(1.1);
+        }
+
+        @include max {
+          margin: 0;
         }
       }
     }
