@@ -14,7 +14,7 @@ table {
   border: 2px solid $alt-fg-color;
   width: 100%;
   font-size: medium;
-  white-space: nowrap;
+  white-space: wrap;
   line-height: 1.15;
 
   @include max {

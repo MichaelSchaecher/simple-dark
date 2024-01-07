@@ -10,11 +10,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 50%;
+  height: rem(480);
   margin: rem(24);
 
   img {
-    width: 50%;
+    width: 60%;
+    height: 100%;
     margin-right: 50%;
     // Align the image to the right.
   }
@@ -53,13 +54,14 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 50%;
+  height: rem(480);
   margin: rem(24) auto;
 
   img {
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 60%;
+    height: 100%;
+    margin-left: 20%;
+    margin-right: 20%;
     // Align the image to the right.
   }
 
@@ -100,12 +102,13 @@
   flex-direction: column;
   float: right;
   width: 100%;
-  height: 50%;
+  height: rem(480);
   margin: rem(24);
 
   img {
-    width: 50%;
-    margin-left: 50%;
+    width: 60%;
+    height: 100%;
+    margin-left: 40%;
     // Align the image to the right.
   }
 
