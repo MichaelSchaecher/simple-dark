@@ -9,7 +9,7 @@
         <!-- Only use the featured images if on is set. -->
         {{ with .Params.featuredImage }}
           <div class="featured-image">
-            <img src="{{ . | relURL }}" alt="Featured image" />
+            <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
           </div>
         {{ end }}
 
