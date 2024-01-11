@@ -54,9 +54,14 @@ code {
 
 blockquote {
   border-left: rem(3) solid $accent-color;
-  padding-left: rem(24);
-  padding-right: rem(32);
+  padding: 0 rem(24);
   line-height: rem(22);
   font-weight: 400;
   font-style: italic;
+  margin: rem(32);
+
+  @include max {
+    margin: rem(16);
+    padding: 0 rem(12);
+  }
 }
