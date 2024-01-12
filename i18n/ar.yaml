@@ -14,7 +14,7 @@ posts:
   other: المنشورات
 reading_time:
   one: "القراءة: 1 دقيقة"
-  other: "القراءة: {{ . عد }} دقيقة"
+  other: "وقت القراءة: {{ .Count }} دقيقة"
 page_not_found:
   other: الصفحة غير موجودة
 page_does_not_exist:
@@ -43,4 +43,6 @@ error:
   other: error
 link_to_heading:
   other: رابط للعنوان
+lastmod:
+  other: آخر تعديل
 

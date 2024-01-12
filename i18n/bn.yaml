@@ -14,7 +14,7 @@ posts:
   other: সব পোস্ট
 reading_time:
   one: "পড়া: 1 মিনিট"
-  other: "পড়া: {{ । গণনা }} মিনিট"
+  other: "পড়ার সময়: {{ .Count }} মিনিট"
 page_not_found:
   other: পাতাটি পাওয়া যায় নি
 page_does_not_exist:
@@ -43,3 +43,5 @@ error:
   other: ত্রুটি
 link_to_heading:
   other: Link to heading
+lastmod:
+  other: সর্বশেষ পরিবর্তন

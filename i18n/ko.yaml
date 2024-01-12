@@ -43,3 +43,5 @@ error:
   other: error
 link_to_heading:
   other: '이 링크는 {{ .Level }} 제목으로 이동합니다.'
+lastmod:
+  other: 최종 수정일

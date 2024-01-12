@@ -14,7 +14,7 @@ posts:
   other: publicaciones
 reading_time:
   one: "Lectura: 1 minuto"
-  other: "Lectura: {{ .Count }} minutos"
+  other: "Tiempo de lectura: {{ .Count }} minutos"
 page_not_found:
   other: Página no encontrada.
 page_does_not_exist:
@@ -43,3 +43,5 @@ error:
   other: error
 link_to_heading:
   other: Enlace al encabezado
+lastmod:
+  other: Última modificación
