@@ -14,7 +14,7 @@ posts:
   other: Posts
 reading_time:
   one: "Čtení: 1 min"
-  other: "Čtení: {{ . Počet }} min"
+  other: "Čtení: {{ .Count }} min"
 page_not_found:
   other: Stránka nenalezena
 page_does_not_exist:
@@ -43,3 +43,5 @@ error:
   other: error
 link_to_heading:
   other: Link to heading
+lastmod:
+  other: "Aktualizováno: "

@@ -14,7 +14,7 @@ posts:
   other: artikel
 reading_time:
   one: "bacaan: 1 menit"
-  other: "bacaan: {{ .Count }} menit"
+  other: "waktu baca: {{ .Count }} menit"
 page_not_found:
   other: Halaman tidak ditemukan
 page_does_not_exist:
@@ -43,3 +43,5 @@ error:
   other: error
 link_to_heading:
   other: Link to heading
+lastmod:
+  other: terakhir diubah

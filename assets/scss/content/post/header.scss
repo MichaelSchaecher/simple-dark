@@ -75,6 +75,13 @@ header {
         // Add a margin to the right of the date to separate it from reading time.
         margin-right: rem(80);
 
+        .lastmod {
+          // Underline the lastmod date to make it stand out from the posted-on date.
+          text-decoration: underline $fa-calendar rem(2);
+          margin-left: rem(8);
+          font-weight: 600;
+        }
+
         // Set media query for max-width to 800px or less.
         @include max {
           margin-right: rem(24);
@@ -90,7 +97,6 @@ header {
     margin: rem(24) 0 rem(64);
 
     ol {
-
       list-style: square;
       // padding-left: rem(12);
 

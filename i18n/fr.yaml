@@ -14,7 +14,7 @@ posts:
   other: articles
 reading_time:
   one: "Lecture: 1 minute"
-  other: "Lecture: {{ .Count }} minutes"
+  other: "Temps de lecture: {{ .Count }} minutes"
 page_not_found:
   other: Page Non Trouvée
 page_does_not_exist:
@@ -43,3 +43,5 @@ error:
   other: error
 link_to_heading:
   other: Link to heading
+lastmod:
+  other: Dernière modification
