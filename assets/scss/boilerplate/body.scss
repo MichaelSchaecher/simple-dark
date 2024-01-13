@@ -36,6 +36,7 @@ body {
   font-family: $font-family;
   font-weight: 400;
   line-height: rem(20);
+  overflow: auto !important;
 
   // The body should have any padding or margins.
   margin: 0;
