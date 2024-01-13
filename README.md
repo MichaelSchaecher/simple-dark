@@ -39,8 +39,8 @@
 <div id="live-demo" align="right">
   <a href="https://simple-dark.pages.dev/">
     <img src="data/images/simple-dark.png" alt="Simple Dark Screenshot" width="75%"></img>
-    <figcaption>Live demo of theme host on Cloudflare pages</figcaption>
-  </a>
+    </a>
+    <figcaption style="float: right">Live demo of theme host on Cloudflare pages</figcaption>
 </div>
 
 ## Features

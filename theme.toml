@@ -1,0 +1,36 @@
+name = "Simple Dark"
+license = "MIT"
+licenselink = "https://github.com/MichaelSchaecher/simple-dark/COPYING"
+description = "A simple dark theme for general blogging, documentation and portfolio purposes."
+
+# Source repository hosted on GitHub
+homepage = "https://github.com/MichaelSchaecher/simple-dark/"
+
+# Demo site of the theme
+demosite = "https://simple-dark.pages.dev/"
+
+# Texonomy terms
+tags = [
+    "Blogs",
+    "Personal",
+    "Documentation",
+    "Portfolio"
+]
+features = [
+    "Fork Awesome",
+    "Fixed Navigation Bar",
+    "Responsive Design",
+    "Syntax Highlighting",
+    "Link & Button Styles Animation",
+    "Tabs",
+    "Notifications Boxes"
+]
+
+[author]
+name = "Michael Schächer"
+homepage = "https://blackstewie.com/"
+
+[original]
+author = "Luiz F. A. de Prá"
+homepage = "https://hugo-coder.netlify.app/"
+repo = "https://github.com/luizdepra/hugo-coder"
