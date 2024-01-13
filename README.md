@@ -27,7 +27,6 @@
   - [Content-Security-Policy](#content-security-policy)
   - [Social and Contact Links](#social-and-contact-links)
   - [Taxonomies](#taxonomies)
-  - [Language Support](#language-support)
   - [Navigation Menu](#navigation-menu)
 - [License](#license)
 
@@ -38,9 +37,9 @@
 <!-- Using html to set image size and alignment -->
 <div id="live-demo" align="right">
   <a href="https://simple-dark.pages.dev/">
-    <img src="data/images/simple-dark.png" alt="Simple Dark Screenshot" width="75%"></img>
-    <figcaption>Live demo of theme host on Cloudflare pages</figcaption>
+    <img src="https://raw.githubusercontent.com/MichaelSchaecher/simple-dark/main/images/screenshot.png" alt="Simple Dark Screenshot"></img>
   </a>
+    <figcaption>Live demo of theme host on Cloudflare pages</figcaption>
 </div>
 
 ## Features
@@ -278,51 +277,6 @@ params:
     tag: tags
     category: categories
     authors: authors
-```
-
-## Language Support
-
-Since *Simple Dark* is based on [Coder](https:/github.com/luizdepra/hugo-coder/) it supports selecting between different languages for the base content. However, setting the base content language with the rest of the site still using the default language is dumb. I've ran into browser unable to translate the page because of this. So I've removed the ability to set the base content language.
-
-If you want to set the base content language you can do so by editing the `layouts/partials/navigation.html` and ad the following code.
-
-```html
-<nav id="nav">
-  <!-- Site title -->
-  <a class="nav-title" href="{{ .Site.BaseURL | relLangURL }}">
-    {{ .Site.Title }}
-  </a>
-
-  {{ if or .Site.Menus.main .Site.IsMultiLingual }}
-
-  <!---->
-
-    <ul class="nav-list">
-
-    <!---->
-
-      {{ if .Site.IsMultiLingual }}
-        {{ $node := . }}
-        {{ .Scratch.Set "separator" true }}
-        {{ range (default .Site.Home.AllTranslations .Translations) }}
-          {{ if ne $.Site.Language .Language }}
-            {{ if $node.Scratch.Get "separator" }}
-              <li class="nav-item menu-separator">
-                <span>|</span>
-              </li>
-              {{ $node.Scratch.Set "separator" false }}
-            {{ end }}
-            <li class="nav-item">
-              <a href="{{ .RelPermalink }}"
-                >{{ .Language.LanguageName | emojify }}</a
-              >
-            </li>
-          {{ end }}
-        {{ end }}
-      {{ end }}
-    </ul>
-  {{ end }}
-</nav>
 ```
 
 ## Navigation Menu

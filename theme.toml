@@ -14,7 +14,8 @@ tags = [
     "Blogs",
     "Personal",
     "Documentation",
-    "Portfolio"
+    "Portfolio",
+    "dark"
 ]
 features = [
     "Fork Awesome",
@@ -24,7 +25,6 @@ features = [
     "Link & Button Styles Animation",
     "Tabs",
     "Notifications Boxes"
-    "Hugo v0.119.x to v0.120.4"
 ]
 
 [author]
