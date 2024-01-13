@@ -14,7 +14,8 @@ tags = [
     "Blogs",
     "Personal",
     "Documentation",
-    "Portfolio"
+    "Portfolio",
+    "dark"
 ]
 features = [
     "Fork Awesome",
