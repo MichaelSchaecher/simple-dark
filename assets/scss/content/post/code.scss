@@ -8,48 +8,44 @@
 // Use ../functions/_index.scss which contains the function rem() to convert pixels to
 // rems. See https://sass-lang.com/documentation/modules/math#
 
+// Set the font-family for code blocks and inline code.
+.chroma,
+code {
+  font-family: $code-font-family;
+}
+
 // Highlight styles
 .highlight {
-  div,
-  pre {
-    margin: rem(32) 0;
-    padding: rem(16);
+  .chroma {
+    margin: 0;
+    padding: 0 rem(16);
+    border-radius: rem(8);
+    font-weight: 400;
+    overflow-x: auto;
     border-radius: rem(8);
 
     // Hide the scrollbar.
     scrollbar-width: none;
-  }
-}
 
-// Pre styles
-pre {
-  display: block;
-  font-family: $code-font-family;
-  font-size: rem(16);
-  font-weight: 400;
-  line-height: rem(24);
-  overflow-x: auto;
-  margin: rem(24) 0;
-  padding: 1rem;
-  border-radius: rem(8);
-
-  code {
-    display: inline-block;
-    background-color: inherit;
-    color: inherit;
+    code {
+      // Keep the background color the same as the body so that the code block
+      // doesn't look like it's floating. This can be done with either the
+      // transparent keyword or the inherit keyword.
+      background-color: transparent;
+      color: inherit;
+    }
   }
 }
 
 // Code styles
 code {
-  font-family: $code-font-family;
   border-radius: rem(4);
-  padding: rem(2) rem(5);
+  padding: 0 rem(5);
 
   // Inline code color should match the default style for code blocks
   // syntax-highlighted with Chroma.
-  background-color: #282c34;
-  color: #abb2bf;
+  background-color: $bg-color;
+  color: $alt-accent-color;
 }
 
 blockquote {

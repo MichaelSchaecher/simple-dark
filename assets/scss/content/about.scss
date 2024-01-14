@@ -18,8 +18,10 @@
   top: rem(42);
   position: relative;
 
-  h2 {
+  .description {
     font-size: rem(24);
+    text-decoration: none;
+    color: $fg-color;
     margin-top: 0;
 
     @include max {

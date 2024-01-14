@@ -19,8 +19,7 @@ a {
   &:focus,
   &:hover,
   &:active {
-    text-decoration: none;
-    // transform: scale(1.05);
+    color: $link-color;
   }
 
   // change the color after the link is visited
@@ -53,7 +52,6 @@ h5,
 h6 {
   font-family: $font-family;
   font-weight: 600;
-  color: $alt-fg-color;
   margin: rem(30) 0 rem(24) 0;
 
   // Set media query for max-width to 800px or less.
