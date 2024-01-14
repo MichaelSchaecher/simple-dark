@@ -8,85 +8,97 @@
 // Use ../functions/_index.scss which contains the function rem() to convert pixels to
 // rems. See https://sass-lang.com/documentation/modules/math#
 
-article {
-  // Padding on top.
-  padding-top: rem(64);
+header {
+  margin: auto;
 
-  // External links.
-  a:where(.external-link)::after {
-    @include fa-icon;
-    content: fa-content($fa-var-external-link);
-  }
-
-  // Internal links.
-  a:where(.internal-link)::after {
-    @include fa-icon;
-    content: fa-content($fa-var-link);
-  }
-
-  // The External link and Internal link share some of the same styles.
-  a:where(.external-link)::after,
-  a:where(.internal-link)::after {
-    padding-left: rem(8);
-    padding-top: rem(3);
-    font-size: rem(10);
-
-    // Align to the top of the line.
-    vertical-align: top;
-  }
-
-  // Behavior for internal and external links.
-  .external-link,
-  .internal-link {
-    // Set the color of the link.
-    transition: all 0.25s ease-in-out;
-    font-weight: 400;
-
-    &:hover,
-    &:focus {
-      color: $link-color;
-      font-weight: 600;
-    }
-  }
-
-  details {
-    summary {
-      cursor: pointer;
-    }
-  }
-
-  .fa-link {
-    // There is no need to have this icon the same size of the header paragraph title.
-    font-size: rem(16);
-
-    // Align to the top of the line.
-    vertical-align: top;
-    color: $alt-fg-color;
-  }
-}
-
-// Style the line at the end of the post.
-.the-end {
-  padding: rem(24) rem(32);
-  hr {
-    border: rem(2) dashed $accent-color;
-  }
-}
-
-figcaption p {
+  // center the content.
   text-align: center;
-  font-style: italic;
-  font-size: rem(16);
-  margin: 0;
-}
 
-h2 {
-  color: $alt-title-color;
-  text-decoration: overline;
-  padding: 0 rem(2);
-}
+  // Post title
+  .title {
+    font-size: rem(42);
+    line-height: rem(46);
 
-h3,
-h4 {
-  font-style: oblique;
+    // Center the text on the page.
+    // text-align: center;
+    color: $title-color;
+
+    // Set media query for max-width to 800px or less.
+    @include max {
+      font-size: rem(40);
+      line-height: rem(44);
+    }
+  }
+
+  .post-meta {
+    // Use i tag for the font awesome icon and set the width and margin to center the
+    // content.
+    i {
+      width: rem(16);
+      margin-left: 0;
+      margin-right: rem(8);
+    }
+
+    // Series styles.
+    .series {
+      padding-bottom: rem(16);
+
+      .series-title {
+        transition: all 0.25s ease-in-out;
+
+        &:hover,
+        &:active {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .date {
+      font-weight: 600;
+
+      .posted-on {
+        // Add a margin to the right of the date to separate it from reading time.
+        margin-right: rem(80);
+
+        // Set media query for max-width to 800px or less.
+        @include max {
+          margin-right: rem(24);
+        }
+      }
+    }
+  }
+
+  // ID Table of Contents styles.
+  #TableOfContents {
+    // Override the text-align: center; from the header tag.
+    text-align: left;
+    margin: rem(24) 0;
+    background-color: $bg-color;
+    padding: rem(16);
+    border-radius: rem(8);
+
+    ol {
+      // List of possible values for list-style-type: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+      list-style: decimal;
+      // padding-left: rem(12);
+
+      li {
+        color: $fg-color;
+        font-weight: 600;
+        padding-left: rem(16);
+
+        a {
+          color: $fg-color;
+          transition: all 0.25s ease-in-out;
+          font-weight: 600;
+
+          &:hover,
+          &:active {
+            color: $link-color;
+            font-size: rem(17);
+          }
+        }
+      }
+    }
+  }
 }
