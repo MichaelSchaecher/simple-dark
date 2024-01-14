@@ -5,32 +5,32 @@
 }
 
 .tax {
-    margin: rem(8) 0;
-    font-size: rem(16);
-    font-weight: 600;
-    color: $alt-fg-color;
+  margin: rem(16) 0;
+  font-size: rem(16);
+  font-weight: 600;
+  color: $fg-color;
 
-    .taxes {
-        display: inline-block;
-        margin: 0;
-        list-style: square;
+  .taxes {
+    display: inline-block;
+    margin: 0;
 
-      .taxing {
+    // Set padding to 24px to match the padding of the post list.
+    padding-left: rem(24);
 
-        .taxlin {
-          color: $alt-fg-color;
-          transition: all 0.25s ease-in-out;
+    list-style: square;
 
-          &:hover,
-          &:focus {
-            color: $link-color;
-            font-weight: 700;
-            font-size: rem(18);
+    .taxing {
+      .taxlin {
+        color: $fg-color;
+        transition: all 0.25s ease-in-out;
+        font-weight: 600;
 
-            // Move to the right.
-            margin-left: rem(8);
-          }
+        &:hover,
+        &:focus {
+          color: $link-color;
+          font-size: rem(17);
         }
       }
     }
   }
+}

@@ -36,23 +36,30 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-                {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
-                <span class="lastmod">
-                  <!-- Only show if the date the post was update is more then 48 hours. -->
-                  {{ if lt (time.Now.Sub .Lastmod).Hours 48 }}
-                    <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
-                      {{ i18n "lastmod" }}
-                      {{ .Lastmod | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+                <span>
+
+                  <!-- Determine if the lastmod should be used instead of the date. -->
+                  {{ if le (.Lastmod) (.Date) }}
+                    <time class="datetime" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+                    </time>
+                  {{ else }}
+                    <time class="datetime" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ i18n "lastmod" }}
+                    {{ .Lastmod | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
                     </time>
                   {{ end }}
+
                 </span>
               </time>
             </span>
+
+            <!-- Reading time -->
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
               {{ i18n "reading_time" .ReadingTime }}
             </span>
+
           </div>
         </div>
         {{ .TableOfContents }}

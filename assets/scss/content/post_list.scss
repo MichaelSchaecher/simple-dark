@@ -77,13 +77,16 @@
   margin: rem(48) auto;
   padding: 0;
 
+  // Center the list.
+  text-align: center;
+
   li {
     margin-left: rem(10);
     display: inline-block;
     position: relative;
 
     button {
-      margin-bottom: rem(10);
+      margin-bottom: rem(16);
       font-size: rem(18);
       color: $fg-color;
       font-family: $font-family;
@@ -92,8 +95,8 @@
       border-radius: rem(4);
       background-color: $bg-color;
 
-      width: rem(128);
-      height: rem(40);
+      width: rem(156);
+      height: rem(64);
 
       transition: all 0.25s ease-in-out;
 
