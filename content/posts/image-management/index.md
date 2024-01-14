@@ -16,7 +16,7 @@ externalLink: ""
 series:
 draft: false
 weight: 20
-featuredImage: ""
+featuredImage: "https://clipart-library.com/newimages/camera-clipart-4.jpg"
 ---
 
 Hugo comes with a built-in shortcode for images that allows for adding captions and resizing images. This is useful for adding images to your content without having to worry about aligning the images and adding captions.

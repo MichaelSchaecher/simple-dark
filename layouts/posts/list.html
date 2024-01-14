@@ -6,7 +6,10 @@
     {{ with .Params.featuredImage }}
     <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
     {{ end }}
-    <h1 class="title">{{ title (i18n (lower .Title)) | default .Title }}</h1>
+
+    <h1 class="list-title">
+      {{ title (i18n (lower .Title)) | default .Title }}
+    </h1>
   </header>
   {{ .Content }}
   <ul class="blogging">

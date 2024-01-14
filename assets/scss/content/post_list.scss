@@ -5,16 +5,26 @@
 
 // Inherit box-sizing from html
 
+.list-title {
+  font-size: rem(42);
+  line-height: rem(46);
+  color: $alt-accent-color;
+
+  // Set media query for max-width to 800px or less.
+  @include max {
+    font-size: rem(40);
+    line-height: rem(44);
+  }
+}
+
 .blogging {
-  margin-top: rem(52);
+  margin-top: rem(32) 0;
   list-style: none;
-  border-radius: rem(8);
-  margin-bottom: rem(20);
   padding: rem(4) rem(32);
 
   // Make the list scrollable and set the max-height to 256px.
   overflow-y: auto;
-  height: rem(280);
+  height: rem(320);
 
   // Hide the scrollbar.
   scrollbar-width: none;
@@ -31,11 +41,12 @@
 
   li {
     margin-bottom: rem(10);
+    font-size: rem(18);
 
     .date {
       text-align: left;
       margin-right: rem(32);
-      font-size: rem(20);
+      // font-size: rem(20);
 
       @include max {
         display: block;
@@ -45,19 +56,19 @@
     }
 
     .title {
-      font-size: rem(18);
+      // font-size: rem(18);
       float: right;
       color: $fg-color;
       font-family: $font-family;
-      font-weight: 700;
+      font-weight: 600;
       transition: all 0.25s ease-in-out;
       cursor: pointer;
 
       &:hover,
       &:focus {
         color: $link-color;
-        text-decoration: none;
-        transform: scale(1.1);
+        font-size: rem(19);
+        font-weight: 700;
       }
 
       @include max {
