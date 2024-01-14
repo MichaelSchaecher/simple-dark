@@ -16,25 +16,19 @@ article {
   a:where(.external-link)::after {
     @include fa-icon;
     content: fa-content($fa-var-external-link);
-    padding-left: rem(8);
-    font-size: rem(10);
-
-    // Align to the top of the line.
-    vertical-align: top;
-    transition: all 0.25s ease-in-out;
-
-    &:hover,
-    &:focus {
-      color: $link-color;
-      font-size: rem(17);
-    }
   }
 
   // Internal links.
   a:where(.internal-link)::after {
     @include fa-icon;
     content: fa-content($fa-var-link);
+  }
+
+  // The External link and Internal link share some of the same styles.
+  a:where(.external-link)::after,
+  a:where(.internal-link)::after {
     padding-left: rem(8);
+    padding-top: rem(3);
     font-size: rem(10);
 
     // Align to the top of the line.
@@ -84,4 +78,15 @@ figcaption p {
   font-style: italic;
   font-size: rem(16);
   margin: 0;
+}
+
+h2 {
+  color: $alt-title-color;
+  text-decoration: overline;
+  padding: 0 rem(2);
+}
+
+h3,
+h4 {
+  font-style: oblique;
 }
