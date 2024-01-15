@@ -1,7 +1,7 @@
 {{ define "title" }} {{ title (i18n (lower .Title)) | default .Title }} · {{
 .Site.Title }} {{ end }} {{ define "content" }}
 <section class="container list">
-  <header class="pagination">
+  <header>
     <!-- Only use the featured images if on is set. -->
     {{ with .Params.featuredImage }}
     <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
