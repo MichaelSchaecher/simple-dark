@@ -11,12 +11,14 @@
 .avatar,
 .error404,
 .construction {
-  width: rem(384);
+  width: rem(360);
+  height: rem(360);
 
-  margin: rem(32) 0;
+  margin-bottom: rem(32);
 
   @include max {
     width: rem(192);
+    height: rem(192);
   }
 }
 

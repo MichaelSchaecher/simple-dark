@@ -140,7 +140,16 @@ ul:not(.pagination, .taxonomy) {
       display: flex;
       flex-direction: column;
       float: none;
-      margin-left: 30%;
+      margin-left: 0;
+
+      .date {
+        text-align: center;
+        margin: 0;
+      }
+
+      .title {
+        text-align: center;
+      }
     }
   }
 }

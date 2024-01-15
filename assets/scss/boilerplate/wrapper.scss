@@ -20,27 +20,11 @@
     flex: auto;
 
     // Margin on the left and right and 0 at the top and bottom.
-    margin: rem(24) rem(24) rem(0) rem(24);
-  }
+    margin: rem(42.5) rem(24) rem(0) rem(24);
 
-  // 4k support means 50% larger than HD.
-  @include large {
-    // max width to use 70% of the page.
-    max-width: 70%;
-
-    .container {
-      margin-top: rem(256);
-      margin-left: rem(16);
-      margin-right: rem(16);
-    }
-  }
-
-  // Include mobile support.
-  @include max {
-    .container {
-      margin-top: rem(64);
-      margin-left: rem(16);
-      margin-right: rem(16);
+    // Small screens
+    @include max {
+      margin: rem(56) rem(16) rem(0) rem(16);
     }
   }
 }
