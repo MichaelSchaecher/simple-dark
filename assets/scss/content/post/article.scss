@@ -10,7 +10,7 @@
 
 article {
   // Padding on top.
-  margin: rem(24) 0;
+  margin-bottom: rem(24);
 
   // External links.
   a:where(.external-link)::after {

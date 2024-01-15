@@ -20,11 +20,11 @@
     flex: auto;
 
     // Margin on the left and right and 0 at the top and bottom.
-    margin: rem(42.5) rem(24) rem(0) rem(24);
+    margin: rem(66.5) rem(24) rem(0) rem(24);
 
     // Small screens
     @include max {
-      margin: rem(56) rem(16) rem(0) rem(16);
+      // margin: rem(56) rem(16) rem(0) rem(16);
     }
   }
 }
