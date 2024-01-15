@@ -11,7 +11,7 @@
   flex-direction: column;
   width: 100%;
   height: rem(480);
-  margin: rem(24);
+  margin: rem(16);
 
   img {
     width: 60%;
@@ -32,7 +32,7 @@
   @include max {
     width: 100%;
     height: rem(192);
-    margin: rem(24) auto rem(80) auto;
+    margin: rem(16) auto rem(80) auto;
 
     img {
       width: 100%;
@@ -55,7 +55,7 @@
   flex-direction: column;
   width: 100%;
   height: rem(480);
-  margin: rem(24) auto;
+  margin: rem(16) auto;
 
   img {
     width: 60%;
@@ -103,7 +103,7 @@
   float: right;
   width: 100%;
   height: rem(480);
-  margin: rem(24);
+  margin: rem(16);
 
   img {
     width: 60%;
@@ -125,7 +125,7 @@
     width: 100%;
     height: rem(192);
     float: none;
-    margin: rem(24) auto rem(80) auto;
+    margin: rem(16) auto rem(80) auto;
 
     img {
       width: 100%;

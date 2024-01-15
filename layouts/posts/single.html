@@ -8,15 +8,13 @@
       <header>
         <!-- Only use the featured images if on is set. -->
         {{ with .Params.featuredImage }}
-          <div class="featured-image">
-            <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
-          </div>
+          <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
         {{ end }}
 
 
         <!-- Title doesn't need to be a link to its self. -->
         <div class="post-title">
-          <h1 class="title">{{ .Title }}</h1>
+          <h1 class="blog-title">{{ .Title }}</h1>
         </div>
 
         <!-- Meta -->

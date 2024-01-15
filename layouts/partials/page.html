@@ -1,12 +1,13 @@
+<!-- This is used for generic pages i.e `contact info, about me and so on` -->
+
 <section class="container page">
   <article>
     <header>
       <!-- Only use the featured images if on is set. -->
       {{ with .Params.featuredImage }}
-        <div class="featured-image">
-          <img src="{{ . | relURL }}" alt="Featured image" />
-        </div>
+      <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
       {{ end }}
+
       <h1 class="title">{{ .Title }}</h1>
     </header>
 

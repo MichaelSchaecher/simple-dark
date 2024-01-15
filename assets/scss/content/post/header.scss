@@ -15,7 +15,7 @@ header {
   text-align: center;
 
   // Post title
-  .title {
+  .blog-title {
     font-size: rem(42);
     line-height: rem(46);
     color: $title-color;
@@ -28,13 +28,8 @@ header {
   }
 
   .post-meta {
-    // Use i tag for the font awesome icon and set the width and margin to center the
-    // content.
-    i {
-      width: rem(16);
-      margin-left: 0;
-      margin-right: rem(8);
-    }
+    // Margin on top and bottom of the post meta.
+    padding: 0 0 rem(48) 0;
 
     // Series styles.
     .series {
@@ -69,15 +64,15 @@ header {
   #TableOfContents {
     // Override the text-align: center; from the header tag.
     text-align: left;
-    margin: rem(24) 0;
+    margin-bottom: rem(48);
     background-color: $bg-color;
-    padding: rem(16);
+    padding: rem(1) 0;
     border-radius: rem(8);
 
     ol {
       // List of possible values for list-style-type: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
       list-style: decimal;
-      // padding-left: rem(12);
+      padding: 0 rem(32);
 
       li {
         color: $fg-color;

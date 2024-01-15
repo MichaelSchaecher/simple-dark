@@ -6,7 +6,7 @@
 // Inherit box-sizing from html
 
 .pagination {
-  margin-top: rem(48);
+  margin-top: rem(24);
   text-align: center;
   font-family: $font-family;
 
@@ -30,5 +30,10 @@
         width: rem(35);
       }
     }
+  }
+
+  // Small screens
+  @include max {
+    margin-top: rem(16);
   }
 }
