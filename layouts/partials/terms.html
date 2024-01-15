@@ -1,15 +1,13 @@
 <section class="container taxonomy">
-  <header class="pagination">
-
+  <header>
     <!-- Only use the featured images if on is set. -->
     {{ with .Params.featuredImage }}
-      <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
+    <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
     {{ end }}
 
     <h1 class="title">
-     {{- if eq .Kind "term" -}} {{- i18n .Data.Plural | title -}} {{- print
-      ": " -}} {{- end -}} {{- i18n (lower .Title) | default .Title | title
-      -}}
+      {{- if eq .Kind "term" -}} {{- i18n .Data.Plural | title -}} {{- print ":"
+      -}} {{- end -}} {{- i18n (lower .Title) | default .Title | title -}}
     </h1>
   </header>
   {{ .Content }}
@@ -19,7 +17,7 @@
     "/%s/%s" $type $name) }}
     <li>
       <!-- Use a button -->
-      <button class="taxonomy-element">
+      <button>
         <a class="taxonomy-title" href="{{ .Permalink }}">{{ .Name }}</a>
         <sup>{{ $count }}</sup>
       </button>

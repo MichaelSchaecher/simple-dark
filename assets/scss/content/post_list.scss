@@ -97,38 +97,30 @@
     position: relative;
 
     button {
-      margin-bottom: rem(16);
+      // margin-bottom: rem(16);
       font-size: rem(18);
+
       color: $fg-color;
-      font-family: $font-family;
       font-weight: 700;
       border: none;
       border-radius: rem(4);
       background-color: $bg-color;
 
-      width: rem(156);
-      height: rem(64);
+      width: rem(192);
+      height: rem(48);
 
       transition: all 0.25s ease-in-out;
 
       &:hover,
       &:focus {
+        background-color: $link-color;
+        transform: scale(1.05);
+        cursor: pointer;
+
         a {
           color: $fg-color;
           text-decoration: none;
         }
-
-        background-color: $link-color;
-        transform: scale(1.1);
-        cursor: pointer;
-      }
-    }
-
-    @include max {
-      button {
-        width: rem(96);
-        height: rem(32);
-        font-size: rem(14);
       }
     }
   }
