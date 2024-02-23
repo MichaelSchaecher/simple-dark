@@ -5,8 +5,6 @@
 
 // Inherit box-sizing from html
 
-@use "../util/index" as *;
-
 .not_found {
   // Align the text vertically and horizontally
   display: flex;
@@ -26,13 +24,12 @@
   }
 
   h2 {
-    margin-top: rem(32);
-    // margin-bottom: rem(52);
+    margin: 0 rem(24);
     font-size: rem(27);
+    color: red;
 
-    @include max {
-      font-size: rem(20);
-    }
+    // Don't pass the article text-decoration to the h2 tag from the article.scss file.
+    text-decoration: none;
   }
 
   // Override the praghraph styles from typography.scss
