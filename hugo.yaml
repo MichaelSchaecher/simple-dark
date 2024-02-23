@@ -1,14 +1,10 @@
 baseURL: "/"
 title: Simple Dark
-#theme: simple-dark
 languageCode: en
 defaultContentLanguage: en
 paginate: 20
 
 enableEmoji: true
-
-# Enable Disqus comments
-# disqusShortname: blackstewie-com
 
 markup:
   goldmark:
