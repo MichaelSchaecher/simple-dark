@@ -11,7 +11,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: rem(80);
 
   h1 {
     margin-top: rem(64);
@@ -24,7 +23,7 @@
   }
 
   h2 {
-    margin: 0 rem(24);
+    margin: rem(32) 0;
     font-size: rem(27);
     color: red;
 
