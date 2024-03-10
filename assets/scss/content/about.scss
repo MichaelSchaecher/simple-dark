@@ -38,14 +38,13 @@
 
       .fa-icon {
         i {
-          margin-right: rem(24);
+          margin: 0 rem(32) 0 0;
           font-size: rem(32);
           transition: all 0.2s ease-in-out;
 
           &:hover,
           &:focus,
           &:active {
-            // font-size: rem(32);
             cursor: pointer;
             transform: scale(1.5);
           }
