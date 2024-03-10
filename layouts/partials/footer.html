@@ -4,10 +4,10 @@
   <p id="footer-text">
     Copyright
 
-    <!-- Use span with java script to update the year -->
-    <span id="-java-year"></span>
-
     <i class="fa fa-copyright"></i>
+
+    <!-- Use span with java script to update the year -->
+    <span id="java-year"></span>
 
     <!-- Just in case java is disabled -->
     <noscript>{{ now.Year }}</noscript>
@@ -33,7 +33,7 @@
 
   <!--  -->
   <script>
-    document.getElementById("-java-year").innerHTML = new Date().getFullYear();
+    document.getElementById("java-year").innerHTML = new Date().getFullYear();
   </script>
 
 </footer>
