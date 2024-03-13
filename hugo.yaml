@@ -152,46 +152,42 @@ params:
 
   social:
     - name: github
-      icon: fa fa-2x fa-github
+      icon: fa-brands fa-github
       weight: 1
       url: https://github.com/
     - name: Gitlab
-      icon: fa fa-2x fa-gitlab
+      icon: fa-brands fa-gitlab
       weight: 2
       url: https://gitlab.com/
     - name: Twitter
-      icon: fa fa-2x fa-twitter
+      icon: fa-brands fa-x-twitter
       weight: 3
       url: https://twitter.com/
     - name: LinkedIn
-      icon: fa fa-2x fa-linkedin
+      icon: fa-brands fa-linkedin
       weight: 4
       url: https://www.linkedin.com/
-    - name: Medium
-      icon: fa fa-2x fa-medium
-      weight: 5
-      url: https://medium.com/
     - name: RSS
-      icon: fa fa-2x fa-rss
-      weight: 6
+      icon: fa-brands fa-rss
+      weight: 5
       url: https://myhugosite.com/
       rel: alternate
       type: application/rss+xml
     - name: Facebook
-      icon: fa fa-2x fa-facebook-square
-      weight: 7
+      icon: fa-brands fa-facebook
+      weight: 6
       url: https://www.facebook.com/
     - name: StackOverflow
-      icon: fa fa-2x fa-stack-overflow
-      weight: 8
+      icon: fa-brands fa-stack-overflow
+      weight: 7
       url: https://stackoverflow.com/
     - name: Instagram
-      icon: fa fa-2x fa-instagram
-      weight: 9
+      icon: fa-brands fa-instagram
+      weight: 8
       url: https://www.instagram.com/
     - name: reddit
-      icon: fa fa-2x fa-reddit-alien
-      weight: 10
+      icon: fa-brands fa-reddit
+      weight: 9
       url: https://www.reddit.com/
 
 taxonomies:
