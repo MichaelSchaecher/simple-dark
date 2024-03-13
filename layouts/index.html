@@ -1,3 +1,11 @@
 {{ define "content" }}
-  {{ partial "home.html" . }}
+<section class="container centered">
+  <div class="about">
+    {{ partialCached "partials/home/avatar.html" . }} {{ partialCached
+    "partials/home/description.html" . }} {{ partialCached
+    "partials/home/social.html" . }}
+  </div>
+
+  {{ partialCached "partials/home/extensions.html" . }}
+</section>
 {{ end }}
