@@ -84,6 +84,11 @@ params:
   hideColorSchemeToggle: true
   # Series see also post count
   maxSeeAlsoItems: 5
+
+  # Enable Font Awesome icons kit (https://fontawesome.com/)
+  fontAwesome:
+    kitCode: 00501d56b9
+
   # Custom CSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
   customSCSS:
 

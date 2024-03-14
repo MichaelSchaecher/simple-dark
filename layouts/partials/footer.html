@@ -34,7 +34,9 @@
   <!-- Update the year to the current year -->
   <script>document.getElementById("java-year").innerHTML = new Date().getFullYear();</script>
 
-  <!--  JavaScript for font awesome -->
-  <script src="https://kit.fontawesome.com/00501d56b9.js" crossorigin="anonymous"></script>
+  <!--  JavaScript for Font Awesome -->
+  {{ with .Site.Params.fontawesome.kitCode }}
+    <script src="https://kit.fontawesome.com/{{ . }}.js" crossorigin="anonymous"></script>
+  {{ end }}
 
 </footer>

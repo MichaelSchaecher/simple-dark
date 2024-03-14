@@ -12,43 +12,6 @@ article {
   // Padding on top.
   margin-bottom: rem(24);
 
-  // External links.
-  a:where(.external-link)::after {
-    @include fa-icon;
-    content: fa-content($fa-var-external-link);
-  }
-
-  // Internal links.
-  a:where(.internal-link)::after {
-    @include fa-icon;
-    content: fa-content($fa-var-link);
-  }
-
-  // The External link and Internal link share some of the same styles.
-  a:where(.external-link)::after,
-  a:where(.internal-link)::after {
-    padding-left: rem(8);
-    padding-top: rem(3);
-    font-size: rem(10);
-
-    // Align to the top of the line.
-    vertical-align: top;
-  }
-
-  // Behavior for internal and external links.
-  .external-link,
-  .internal-link {
-    // Set the color of the link.
-    transition: all 0.25s ease-in-out;
-    font-weight: 400;
-
-    &:hover,
-    &:focus {
-      color: $link-color;
-      font-weight: 600;
-    }
-  }
-
   details {
     summary {
       cursor: pointer;
