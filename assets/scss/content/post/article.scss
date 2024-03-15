@@ -18,15 +18,6 @@ article {
     }
   }
 
-  .fa-link {
-    // There is no need to have this icon the same size of the header paragraph title.
-    font-size: rem(16);
-
-    // Align to the top of the line.
-    vertical-align: top;
-    color: $alt-fg-color;
-  }
-
   // Small screens
   @include max {
     margin-top: rem(16);
@@ -58,4 +49,20 @@ h3,
 h4 {
   font-style: oblique;
   margin: rem(42) 0;
+}
+
+// Animate the internal and external links for the post.
+.internal-link,
+.external-link {
+  color: $link-color;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+
+    // animate with adding shadow to the link.
+    text-shadow: 0 0 rem(4) $link-color;
+  }
 }

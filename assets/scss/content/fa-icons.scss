@@ -5,6 +5,17 @@
   color: $social-color;
 }
 
+// Both the link and link-slash icons should be half of the default paragraph text size.
+.fa-link,
+.fa-link-slash {
+  font-size: rem(8);
+  line-height: rem(12);
+
+  // Align the icons with the text.
+  vertical-align: top;
+  margin: 0;
+}
+
 // Set color for general fa-icons based on usage.
 .fa-file,
 .fa-file-text,

@@ -1,7 +1,22 @@
-<a
-href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}
+<!-- Render a link with Font Awesome icon based on the link type -->
 {{ if findRE "^(https?:)?//" (lower .Destination) }}
-  class="external-link" target="_blank" rel="noopener"
+<a
+  href="{{ .Destination | safeURL }}"
+  title="{{ .Title }}"
+  class="external-link"
+  target="_blank"
+  rel="noopener"
+>
+  {{ .Text | safeHTML }}
+  <i class="fa fa-link"></i>
+</a>
 {{ else }}
+<a
+  href="{{ .Destination | safeURL }}"
+  title="{{ .Title }}"
   class="internal-link"
-{{ end }}>{{ .Text | safeHTML }}</a>
+>
+  {{ .Text | safeHTML }}
+  <i class="fa fa-link-slash"></i>
+</a>
+{{ end }}
