@@ -88,9 +88,8 @@
         &:hover,
         &:focus,
         &:active {
-          text-decoration: none;
           color: $link-color;
-          transform: scale(1.1);
+          text-decoration: none;
         }
 
         @include max {

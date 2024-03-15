@@ -40,13 +40,14 @@
         i {
           margin: 0 rem(32) 0 0;
           font-size: rem(32);
-          transition: all 0.2s ease-in-out;
+          // transition: all 0.2s ease-in-out;
 
           &:hover,
           &:focus,
           &:active {
-            cursor: pointer;
-            transform: scale(1.5);
+            //   cursor: pointer;
+            //   transform: scale(1.5);
+            color: $link-color;
           }
 
           @include max {

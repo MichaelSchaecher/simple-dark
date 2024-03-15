@@ -21,14 +21,9 @@
 
     .taxing {
       .taxlin {
-        color: $fg-color;
-        transition: all 0.25s ease-in-out;
-        font-weight: 600;
-
         &:hover,
         &:focus {
           color: $link-color;
-          font-size: rem(17);
         }
       }
     }

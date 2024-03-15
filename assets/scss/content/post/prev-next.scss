@@ -20,11 +20,14 @@
     font-weight: 600;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       cursor: pointer;
       background-color: $button-bg-color;
       color: $fg-color;
-      transform: scale(1.1);
+
+      // Animate box-shadow on hover, focus, and active
+      box-shadow: 0 0 rem(8) $link-color;
     }
   }
 

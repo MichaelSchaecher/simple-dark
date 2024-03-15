@@ -19,13 +19,11 @@
   background-color: $alt-bg-color;
 
   a {
-    color: $link-color;
-    transition: color 0.25s ease-in-out;
-
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       color: $link-color;
-      font-weight: 700;
+      text-decoration: none;
     }
   }
 }

@@ -60,7 +60,7 @@ h4 {
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: $link-color;
 
     // animate with adding shadow to the link.
     text-shadow: 0 0 rem(4) $link-color;
