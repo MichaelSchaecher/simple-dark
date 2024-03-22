@@ -4,9 +4,9 @@ title: {{ replace .File.ContentBaseName "-" " " | title }}
 date: {{ .Date }}
 lastmod: {{ .Date }}
 description: ""
-slug: ""
+slug: {{ .File.ContentBaseName }}
 authors:
-  - John Doe
+  - {{ .Site.Params.author }}
 tags:
   - new
 categories:

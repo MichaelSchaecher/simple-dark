@@ -1,0 +1,95 @@
+{{ define "title" }}
+  {{ .Title }} ·
+  {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container post">
+    <article>
+      <header>
+        <!-- Only use the featured images if on is set. -->
+        {{ with .Params.featuredImage }}
+          <img class="featured" src="{{ . | relURL }}" alt="Featured image" />
+        {{ end }}
+
+
+        <!-- Title doesn't need to be a link to its self. -->
+        <div class="post-title">
+          <h1 class="blog-title">{{ .Title }}</h1>
+        </div>
+
+        <!-- Meta -->
+        <div class="post-meta">
+          <!-- Authors -->
+          <div class="post-authors">
+            {{ with .GetTerms "authors" }}
+              {{ partial "taxonomy/authors.html" . }}
+            {{ end }}
+          </div>
+
+          <!-- Series -->
+          {{ partial "taxonomy/series.html" . }}
+
+
+          <!-- Date and reading time -->
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+                <span>
+
+                  <!-- Determine if the lastmod should be used instead of the date. -->
+                  {{ if le (.Lastmod) (.Date) }}
+                    <time class="datetime" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+                    </time>
+                  {{ else }}
+                    <time class="datetime" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+                    {{ i18n "lastmod" }}
+                    {{ .Lastmod | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+                    </time>
+                  {{ end }}
+
+                </span>
+              </time>
+            </span>
+
+            <!-- Reading time -->
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              {{ i18n "reading_time" .ReadingTime }}
+            </span>
+
+          </div>
+        </div>
+        {{ .TableOfContents }}
+      </header>
+      {{ .Content }}
+
+      <!-- There should be a line here to mark the end of the article. -->
+      <div class="the-end"><hr></div>
+
+      <!-- Taxonomy links -->
+      <div class="taxonomy-links">
+        {{ with .GetTerms "categories" }}
+          {{ partial "taxonomy/categories.html" . }}
+        {{ end }}
+        {{ with .GetTerms "tags" }}
+          {{ partial "taxonomy/tags.html" . }}
+        {{ end }}
+      </div>
+
+      <!-- Previous and next post -->
+      {{ partial "posts/prev-next.html" . }}
+
+
+      <footer>
+        {{ partial "posts/comments/disqus.html" . }}
+        {{ partial "posts/comments/commento.html" . }}
+        {{ partial "posts/comments/utterances.html" . }}
+        {{ partial "posts/comments/giscus.html" . }}
+        {{ partial "posts/comments/telegram.html" . }}
+      </footer>
+    </article>
+  </section>
+
+  {{ partial "posts/math.html" . }}
+{{ end }}
