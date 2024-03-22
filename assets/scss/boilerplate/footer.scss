@@ -26,4 +26,9 @@
       text-decoration: none;
     }
   }
+
+  @include max {
+    font-size: rem(14);
+    line-height: rem(30);
+  }
 }

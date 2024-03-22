@@ -11,7 +11,7 @@
 .avatar,
 .error404,
 .construction {
-  width: rem(360);
+  width: rem(1027);
   height: rem(360);
 
   margin-bottom: rem(32);
@@ -29,7 +29,7 @@
 
   // This will cuase the image to look squished, but it needs to be done to make the
   // image not so large
-  height: rem(128);
+  height: rem(212);
 
   @include max {
     height: rem(128);

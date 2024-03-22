@@ -9,16 +9,8 @@
 .left {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: rem(480);
   margin: rem(16);
-
-  img {
-    width: 60%;
-    height: 100%;
-    margin-right: 50%;
-    // Align the image to the right.
-  }
+  align-items: flex-start;
 
   // The caption is 50% of the width of the figure.
   figcaption {
@@ -28,42 +20,12 @@
       font-size: rem(14);
     }
   }
-
-  @include max {
-    width: 100%;
-    height: rem(192);
-    margin: rem(16) auto rem(80) auto;
-
-    img {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    // The caption is 50% of the width of the figure.
-    figcaption {
-      p {
-        text-align: right;
-        font-size: rem(14);
-      }
-    }
-  }
 }
 
 .center {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: rem(480);
-  margin: rem(16) auto;
-
-  img {
-    width: 60%;
-    height: 100%;
-    margin-left: 20%;
-    margin-right: 20%;
-    // Align the image to the right.
-  }
+  align-items: center;
 
   // The caption is 50% of the width of the figure.
   figcaption {
@@ -75,24 +37,11 @@
     }
   }
 
-  @include max {
-    width: 100%;
-    height: rem(192);
-    float: none;
-    margin-bottom: rem(80);
-
-    img {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-
-    // The caption is 50% of the width of the figure.
-    figcaption {
-      p {
-        text-align: right;
-        font-size: rem(14);
-      }
+  // The caption is 50% of the width of the figure.
+  figcaption {
+    p {
+      text-align: right;
+      font-size: rem(14);
     }
   }
 }
@@ -100,17 +49,7 @@
 .right {
   display: flex;
   flex-direction: column;
-  float: right;
-  width: 100%;
-  height: rem(480);
-  margin: rem(16);
-
-  img {
-    width: 60%;
-    height: 100%;
-    margin-left: 40%;
-    // Align the image to the right.
-  }
+  align-items: flex-end;
 
   // The caption is 50% of the width of the figure.
   figcaption {
@@ -121,24 +60,36 @@
     }
   }
 
-  @include max {
-    width: 100%;
-    height: rem(192);
-    float: none;
-    margin: rem(16) auto rem(80) auto;
-
-    img {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
+  // The caption is 50% of the width of the figure.
+  figcaption {
+    p {
+      text-align: right;
+      font-size: rem(14);
     }
+  }
+}
 
-    // The caption is 50% of the width of the figure.
-    figcaption {
-      p {
-        text-align: right;
-        font-size: rem(14);
-      }
+.left,
+.center,
+.right {
+  margin: rem(16);
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    width: 75%;
+    height: 75%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 100%;
+
+      // Margin left and right should be 0 and auto for top and bottom text wrapping.
+      margin: 0 auto;
     }
   }
 }

@@ -20,7 +20,7 @@ markup:
 
 params:
   author: Michael Schaecher
-  description: Ideas about technology, software development and life.
+  description: "A simple dark theme for Hugo"
   keywords: blog, developer, personal
 
   license:
@@ -46,7 +46,7 @@ params:
 
   # Set an image to be used as part of the listing of blogs and posts.
   images:
-    avatar: /images/site/logo.png
+    avatar: /images/site/logo.jpg
     # #gravatar: john.doe@example.com
 
     error: /images/site/404.png

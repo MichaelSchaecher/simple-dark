@@ -31,7 +31,7 @@ With the add styling from [Simple Dark](https://github.com/MichaelSchaecher/simp
 {{</* figure class="left" src="./left.png" caption="This is a left aligned image" */>}}
 {{< /highlight >}}
 
-{{< figure class="left" src="./left.png" caption="This is a left aligned image" >}}
+{{< figure class="left" style="width:50%;height:50%;" src="./left.png" caption="This is a left aligned image" >}}
 
 ## Center Alignment
 
