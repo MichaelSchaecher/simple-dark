@@ -50,29 +50,7 @@ $bg-color-notice-error-content: rgba(240, 85, 80, 0.1) !default;
 
 // Social and networking icons colors, use the same colors as the official
 // icons from the social networks. Only the most popular ones are included.
-$social-twitter: rgb(29, 161, 242) !default;
-$social-facebook: rgb(59, 89, 152) !default;
-$social-google-plus: rgb(221, 75, 57) !default;
-$social-linkedin: rgb(0, 119, 181) !default;
-$social-github: rgb(0, 0, 0) !default;
-$social-gitlab: rgb(255, 51, 102) !default;
-$social-instagram: rgb(195, 42, 163) !default;
-$social-pinterest: rgb(189, 8, 28) !default;
-$social-youtube: rgb(205, 32, 31) !default;
-$social-vimeo: rgb(69, 187, 255) !default;
-$social-medium: rgb(2, 184, 117) !default;
-$social-gmail: rgb(219, 68, 55) !default;
-$social-yahoo: rgb(67, 2, 151) !default;
-$social-outlook: rgb(0, 114, 198) !default;
-$social-mastodon: rgb(84, 160, 255) !default;
-$social-stack-overflow: rgb(244, 128, 36) !default;
-$social-codepen: rgb(0, 187, 211) !default;
-$social-dribbble: rgb(234, 76, 137) !default;
-$social-behance: rgb(18, 123, 230) !default;
-$social-reddit: rgb(255, 69, 0) !default;
-$social-rss: rgb(255, 69, 0) !default;
-$social-skype: rgb(0, 175, 240) !default;
-$social-bitbucket: rgb(0, 120, 138) !default;
+$social-color: rgb(95, 95, 95) !default;
 
 // Set color for general fa-icons based on usage.
 $fa-calendar: red !default;

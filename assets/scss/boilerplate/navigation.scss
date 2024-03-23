@@ -29,12 +29,11 @@
 
     margin-left: rem(16);
 
-    // There is no need to underline the title in the nav bar; or change the color
-    // on hover or focus.
+    // The title doesn't need to be animated or change on hover.
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       text-decoration: none;
+      text-shadow: none;
     }
   }
 
@@ -88,9 +87,8 @@
         &:hover,
         &:focus,
         &:active {
-          text-decoration: none;
           color: $link-color;
-          transform: scale(1.1);
+          text-decoration: none;
         }
 
         @include max {

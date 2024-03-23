@@ -22,6 +22,11 @@
         rel="license">{{ with .Site.Params.license.type }}{{ . }} {{ end }}
       </a>
       license
+    {{ else }}
+      {{ i18n "licensed_under" }}
+      <a href="https://raw.githubusercontent.com/MichaelSchaecher/simple-dark/main/COPYING"
+        rel="license">MIT</a>
+      license
     {{ end }} ·
 
     <!-- Display the powered by Hugo and Coder -->
@@ -31,9 +36,7 @@
     <a href="https://github.com/MichaelSchaecher/simple-dark" rel="nofollow">Simple Dark</a>
     </p>
 
-  <!--  -->
-  <script>
-    document.getElementById("java-year").innerHTML = new Date().getFullYear();
-  </script>
+  <!-- Update the year to the current year -->
+  <script>document.getElementById("java-year").innerHTML = new Date().getFullYear();</script>
 
 </footer>

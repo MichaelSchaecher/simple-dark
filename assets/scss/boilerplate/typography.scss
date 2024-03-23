@@ -7,8 +7,8 @@
 
 // Default link styles
 a {
-  font-weight: 500;
   color: $link-color;
+  font-weight: 600;
   text-decoration: none;
 
   // List transitions styles for all links.
@@ -20,6 +20,9 @@ a {
   &:hover,
   &:active {
     color: $link-color;
+
+    // animate with adding shadow to the link.
+    text-shadow: 0 0 rem(8) $link-color;
   }
 
   // change the color after the link is visited

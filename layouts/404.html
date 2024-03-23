@@ -1,3 +1,22 @@
 {{ define "content" }}
-  {{ partial "404.html" . }}
+<section class="container centered">
+  <div class="not_found">
+    <!-- This is a custom variable for applying a  -->
+    {{ if .Site.Params.images.error }} {{ with .Site.Params.images.error }}
+    <img
+      class="error404"
+      src="{{ . | relURL }}"
+      alt="404"
+      class="missing-page"
+    />
+    {{ end }} {{ else }}
+    <h1>404</h1>
+    {{ end }}
+    <h2>{{ i18n "page_not_found" }}</h2>
+    <p>
+      {{ i18n "page_does_not_exist" }}<br />{{ i18n "head_back" .Site.BaseURL |
+      safeHTML }}
+    </p>
+  </div>
+</section>
 {{ end }}
