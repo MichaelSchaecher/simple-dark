@@ -20,6 +20,7 @@
   - [Site Parameters](#site-parameters)
   - [Markdown Parameters](#markdown-parameters)
   - [Author, Description and Keywords](#author-description-and-keywords)
+  - [Font Awesome](#font-awesome)
   - [Licensing](#licensing)
   - [See Also](#see-also)
   - [Custom SCSS](#custom-scss)
@@ -37,7 +38,10 @@
 <!-- Using html to set image size and alignment -->
 <div id="live-demo" align="right">
   <a href="https://simple-dark.pages.dev/">
-    <img src="https://raw.githubusercontent.com/MichaelSchaecher/simple-dark/main/images/screenshot.png" alt="Simple Dark Screenshot"></img>
+    <img
+      src="images/screenshot.png"
+      alt="Simple Dark Screenshot"
+    ></img>
   </a>
     <figcaption>Live demo of theme host on Cloudflare pages</figcaption>
 </div>
@@ -49,7 +53,7 @@
 - Syntax highlighting
 - Analytics
 - Comments with hugo compatible commenting systems.
-- Social links using [Font Awesome](https://fontawesome.com/) version 5.15.3
+- Social links using [Font Awesome](https://fontawesome.com/) icons via icon kit.
 - Image management with captions.
 
 ## Installation
@@ -58,8 +62,7 @@ You can install the theme either as a clone or submodule if you are using git or
 
 ### Clone
 
-```console
-# Clone the theme to the themes directory
+``` console
 git clone https://github.com/MichaelSchaecher/simple-dark.git themes/simple-dark
 ```
 
@@ -150,6 +153,12 @@ series:
   - name: Series Name
     weight: 1
 ```
+
+### Font Awesome
+
+The theme uses [Font Awesome](https://fontawesome.com/) icons via the icon kit. You can enable the icon kit by setting the `fontawesomeKit` parameter to the kit code.
+
+You well need to sign up for a free account to get the kit code. The advantage of using the kit code is that you can use the latest icons and you can use the icons in your site without the need to download the icons to your site.
 
 ### Custom SCSS
 
