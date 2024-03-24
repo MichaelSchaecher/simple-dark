@@ -86,8 +86,8 @@ params:
   maxSeeAlsoItems: 5
 
   # Enable Font Awesome icons kit (https://fontawesome.com/)
-  fontAwesome:
-    kitCode: 00501d56b9
+  # fontAwesome:
+    # kitCode: 00501d56b9
 
   # Custom CSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
   customSCSS:
@@ -165,21 +165,21 @@ params:
       weight: 2
       url: https://gitlab.com/
     - name: Twitter
-      icon: fa-brands fa-x-twitter
+      icon: fa-brands fa-square-x-twitter
       weight: 3
       url: https://twitter.com/
     - name: LinkedIn
       icon: fa-brands fa-linkedin
       weight: 4
       url: https://www.linkedin.com/
-    - name: RSS
+    - name: RSS20.29
       icon: fa-brands fa-rss
       weight: 5
       url: https://myhugosite.com/
       rel: alternate
       type: application/rss+xml
     - name: Facebook
-      icon: fa-brands fa-facebook
+      icon: fa-brands fa-facebook-square
       weight: 6
       url: https://www.facebook.com/
     - name: StackOverflow
