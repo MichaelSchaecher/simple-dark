@@ -33,7 +33,7 @@
           <!-- Date and reading time -->
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-regular fa-calendar" aria-hidden="true"></i>
                 <span>
 
                   <!-- Determine if the lastmod should be used instead of the date. -->
@@ -54,14 +54,14 @@
 
             <!-- Reading time -->
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-regular fa-clock" aria-hidden="true"></i>
               {{ i18n "reading_time" .ReadingTime }}
             </span>
 
           </div>
         </div>
-        {{ .TableOfContents }}
       </header>
+      {{ .TableOfContents }}
       {{ .Content }}
 
       <!-- There should be a line here to mark the end of the article. -->

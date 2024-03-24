@@ -1,10 +1,11 @@
 <div class="tax">
-  <i class="fa fa-user" aria-hidden="true"></i>
+  <!-- <i class="fa-regular fa-user" aria-hidden="true"></i> -->
+  <i class="fa-regular fa-circle-user" aria-hidden="true"></i>
   {{- range $index, $el := . -}}
-    <ul class="taxes">
-      <li class="taxing">
-        <a class="taxlin" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-      </li>
-    </ul>
+  <ul class="taxes">
+    <li class="taxing">
+      <a class="taxlin" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    </li>
+  </ul>
   {{- end -}}
 </div>

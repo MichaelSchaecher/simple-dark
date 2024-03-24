@@ -3,11 +3,11 @@
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }} {{ with
   .NextInSection }}
   <button class="next" onclick="location.href='{{ .Permalink | safeURL }}'">
-    <i class="fa fa-fast-backward"></i>
+    <i class="fa-solid fa-backward-fast" aria-hidden="true"></i>
   </button>
   {{ end }} {{ with .PrevInSection }}
   <button class="prev" onclick="location.href='{{ .Permalink | safeURL }}'">
-    <i class="fa fa-fast-forward"></i>
+    <i class="fa-solid fa-forward-fast" aria-hidden="true"></i>
   </button>
   {{ end }}
 </div>

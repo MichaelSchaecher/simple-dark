@@ -1,0 +1,29 @@
+#TableOfContents {
+  // Override the text-align: center; from the header tag.
+  text-align: left;
+  margin-bottom: rem(48);
+
+  ol {
+    // List of possible values for list-style-type: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+    list-style: decimal;
+    padding: 0 rem(16);
+
+    li {
+      color: $fg-color;
+      font-weight: 600;
+      padding-left: rem(16);
+
+      a {
+        color: $alt-fg-color;
+        // transition: all 0.25s ease-in-out;
+        // font-weight: 600;
+
+        &:hover,
+        &:active {
+          color: $link-color;
+          // font-size: rem(17);
+        }
+      }
+    }
+  }
+}

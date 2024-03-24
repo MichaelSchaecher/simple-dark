@@ -17,10 +17,11 @@
     // Set padding to 24px to match the padding of the post list.
     padding-left: rem(24);
 
-    list-style: square;
+    list-style: none;
 
     .taxing {
       .taxlin {
+        color: $alt-fg-color;
         &:hover,
         &:focus {
           color: $link-color;

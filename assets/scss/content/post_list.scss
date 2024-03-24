@@ -58,14 +58,11 @@
       color: $fg-color;
       font-family: $font-family;
       font-weight: 600;
-      transition: all 0.25s ease-in-out;
       cursor: pointer;
 
       &:hover,
       &:focus {
         color: $link-color;
-        font-size: rem(19);
-        font-weight: 700;
       }
 
       @include max {

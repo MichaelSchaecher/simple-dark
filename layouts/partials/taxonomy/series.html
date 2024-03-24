@@ -8,7 +8,7 @@
     {{ $series := index $.Site.Taxonomies.series $name }}
     {{ if gt (len $series.Pages) 1 }}
       <div class="series">
-        <i class="fa fa-book" aria-hidden="true"></i>
+        <i class="fa-solid fa-book-open" aria-hidden="true"></i>
         <!-- Link to servies page -->
         {{ i18n "series" }}: &nbsp;
         <a
