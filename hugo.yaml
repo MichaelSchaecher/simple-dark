@@ -119,41 +119,41 @@ params:
 
   social:
     - name: github
-      icon: fa-brands fa-github
+      icon: fa-github
       weight: 1
       url: https://github.com/
     - name: Gitlab
-      icon: fa-brands fa-gitlab
+      icon: fa-gitlab
       weight: 2
       url: https://gitlab.com/
     - name: Twitter
-      icon: fa-brands fa-square-x-twitter
+      icon: fa-square-x-twitter
       weight: 3
       url: https://twitter.com/
     - name: LinkedIn
-      icon: fa-brands fa-linkedin
+      icon: fa-linkedin
       weight: 4
       url: https://www.linkedin.com/
-    - name: RSS20.29
-      icon: fa-brands fa-rss
+    - name: RSS
+      icon: fa-rss
       weight: 5
       url: https://myhugosite.com/
       rel: alternate
       type: application/rss+xml
     - name: Facebook
-      icon: fa-brands fa-facebook-square
+      icon: fa-facebook-square
       weight: 6
       url: https://www.facebook.com/
     - name: StackOverflow
-      icon: fa-brands fa-stack-overflow
+      icon: fa-stack-overflow
       weight: 7
       url: https://stackoverflow.com/
     - name: Instagram
-      icon: fa-brands fa-instagram
+      icon: fa-instagram
       weight: 8
       url: https://www.instagram.com/
     - name: reddit
-      icon: fa-brands fa-reddit
+      icon: fa-reddit
       weight: 9
       url: https://www.reddit.com/
 

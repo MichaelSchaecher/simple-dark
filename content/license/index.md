@@ -6,9 +6,7 @@ draft: False
 
 ## MIT License
 
-<!-- Copyright <small>&copy;</small> 2023 Michael Schaecher -->
-
-Copyright <small>&copy;</small> 2023 Michael Schaecher
+Copyright <small>&copy;</small> <span id="java-year"></span><noscript>{{ now.Year }}</noscript> Michael Schaecher
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
