@@ -156,9 +156,9 @@ series:
 
 ### Font Awesome
 
-The theme uses [Font Awesome](https://fontawesome.com/) icons via the icon kit. You can enable the icon kit by setting the `fontawesomeKit` parameter to the kit code.
+To use [Font Awesome](https://fontawesome.com/) icons you well need to set either the `fontAwesomeKit` parameter which requires a kit code and an account; or `fontAwesomeCDN` parameter which using a CDN link. The CDN link in testing had better out come than the kit code when using a smart phone or tablet.
 
-You well need to sign up for a free account to get the kit code. The advantage of using the kit code is that you can use the latest icons and you can use the icons in your site without the need to download the icons to your site.
+To have access to as many icons as possible I recommend using the **all.css** that you can find [here](https://cdnjs.com/libraries/font-awesome). Click the button to show hidden files to find what is needed.
 
 ### Custom SCSS
 
@@ -176,33 +176,7 @@ params:
 
 ### Analytics
 
-The theme supports Google Analytics, Plausible and Simple Analytics. You can enable the analytics by setting the `analytics` parameter to the name of the analytics you want to use. You can also set the `analyticsID` parameter to the ID of the analytics you want to use.
-
-However, some hosting providers like [Cloudflare Pages](https://pages.cloudflare.com/) provide analytics without the need to configure with the theme, otherwise set the `analyticsID` parameter to the ID of the analytics you want to use.
-
-- [goatCounter](https://goatcounter.com/)
-  - `code: goatcounter`
-- [googleAnalytics](https://analytics.google.com/)
-  - `id: UA-XXXXXXXXX-X`
-- [matomo](https://matomo.org/)
-  - `siteID: 1`
-  - `serverURL: https://example.com/matomo/`
-- [yandexMetrika](https://metrika.yandex.com/)
-  - `id: XXXXXXXX`
-- [cloudflare](https://www.cloudflare.com/)
-  - `id: XXXXXXXX`
-- [plausibleAnalytics](https://plausible.io/)
-  - `domain: example.com`
-  - `serverURL: https://example.com`
-  - `outboundLinksTracking: true`
-  - `fileDownloadsTracking: true`
-- [applicationInsights](https://azure.microsoft.com/en-us/services/monitor/)
-  - `connectionString: XXXXXXXX`
-- [microAnalytics](https://microanalytics.io/)
-  - `id: XXXXXXXX`
-  - `dnt: false`
-- [pirsch](https://pirsch.io/)
-  - `code: XXXXXXXX`
+General analytics have been removed, instead I recommend using a tag manager like **[Cloudflare's Zaraz](https://www.cloudflare.com/application-services/products/zaraz/)**. However, you well need to have your site listed with **Cloudflare** to use **Zaraz**.
 
 ### Content-Security-Policy
 
