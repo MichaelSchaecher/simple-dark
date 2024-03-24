@@ -100,46 +100,6 @@ params:
   # Custom remote JS files
   customRemoteJS:
 
-  # If you want to use fathom(https://usefathom.com) for analytics, add this section
-  #fathomAnalytics:
-  #  siteID: ABCDE
-  #  serverURL: analytics.example.com # Default value is cdn.usefathom.com, overwrite this if you are self-hosting
-
-  # If you want to use plausible(https://plausible.io) for analytics, add this section
-  #plausibleAnalytics:
-  #  domain: example.com
-  #  serverURL: analytics.example.com # Default value is plausible.io, overwrite this if you are self-hosting or using a custom domain
-  #  outboundLinksTracking: true
-  #  fileDownloadsTracking: true
-
-  # If you want to use goatcounter(https://goatcounter.com) for analytics, add this section
-  #goatCounter:
-  #  code: code
-  # If you want to use Cloudflare Web Analytics(https://cloudflare.com) for analytics, add this section
-  #cloudflare:
-  #  token: token
-  # If you want to use Matomo(https://matomo.org) for analytics, add this section
-  #matomo:
-  #  siteID: ABCDE # Default value is 1, overwrite this if you are cloud-hosting
-  #  serverURL: analytics.example.com # For cloud-hosting, use provided URL, e.g. example.matomo.cloud
-  # If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
-  #googleTagManager:
-  #  id: gid
-  # If you want to use Yandex Metrika(https://metrika.yandex.ru) for analytics, add this section
-  #yandexMetrika:
-  #  id: gid
-  # If you want to use Application Insights(https://azure.com/) for analytics, add this section
-  #applicationInsights:
-  #  connectionString: connectionString
-  # If you want to use microanalytics.io for analytics, add this section
-  #microAnalytics:
-  #  id: ABCDE
-  #  dnt: false
-  # If you want to use Pirsch(https://pirsch.io) for analytics, add this section
-  #pirsch:
-  #  code: ABCDE
-  # If you want to implement a Content-Security-Policy, add this section
-
   #csp:
   #  childsrc: [self]
   #  fontsrc: [self, https://fonts.gstatic.com, https://cdn.jsdelivr.net/]
