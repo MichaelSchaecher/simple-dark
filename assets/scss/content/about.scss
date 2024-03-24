@@ -6,16 +6,8 @@
 // Inherit box-sizing from html
 
 .about {
-  // Align both vertically
-  // display: flex;
-  margin: auto;
-
-  // padding-top: rem(48);
-
-  // Align the text to the center
   text-align: center;
   padding-top: 0;
-  // top: rem(42);
   position: relative;
 
   .description {
@@ -23,42 +15,47 @@
     text-decoration: none;
     color: $fg-color;
     margin-top: 0;
-
-    @include max {
-      font-size: rem(20);
-    }
   }
+}
 
-  .social-order {
-    list-style: none;
+.social-order {
+  // Remove the default padding from the ul.
+  padding-inline-start: 0;
 
-    .socials {
-      display: inline-block;
-      position: relative;
+  .socials {
+    display: inline-block;
+    position: relative;
 
-      .fa-icon {
-        i {
-          margin: 0 rem(32) 0 0;
-          font-size: rem(42);
-          // transition: all 0.2s ease-in-out;
+    .fa-icon {
+      i {
+        margin: 0 rem(16) 0 rem(16);
+        font-size: rem(32);
 
-          &:hover,
-          &:focus,
-          &:active {
-            //   cursor: pointer;
-            //   transform: scale(1.5);
-            color: $link-color;
-          }
-
-          @include max {
-            font-size: rem(20);
-          }
+        &:hover,
+        &:focus,
+        &:active {
+          color: $link-color;
         }
       }
+    }
+  }
+}
 
-      // Prevent small screens from stacking
-      @include max {
-        margin: rem(8) 0;
+.about {
+  @include max {
+    .description {
+      font-size: rem(20);
+      padding: rem(20) 0;
+      margin: 0;
+    }
+
+    .social-order {
+      padding: rem(20) 0;
+      margin: 0;
+      .socials .fa-icon {
+        i {
+          font-size: rem(24);
+        }
       }
     }
   }

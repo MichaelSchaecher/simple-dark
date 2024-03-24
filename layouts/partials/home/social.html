@@ -10,29 +10,11 @@
       href="{{ .url | safeURL }}"
       aria-label="{{ .name }}"
       class="fa-icon"
-      {{
-      if
-      .rel
-      }}rel="{{ .rel }}"
-      {{
-      end
-      }}
-      {{
-      if
-      .target
-      }}target="{{ .target }}"
-      {{
-      end
-      }}
-      {{
-      if
-      .type
-      }}type="{{ .type }}"
-      {{
-      end
-      }}
+      {{ if .rel }} rel="{{ .rel }}" {{ end }}
+      {{ if .target }} target="{{ .target }}" {{ end }}
+      {{ if .type }} type="{{ .type }}" {{ end }}
     >
-      <i class="{{ .icon }}" aria-hidden="false"></i>
+      <i class="{{ .icon }} fa-fw" aria-hidden="false"></i>
     </a>
   </li>
   {{ else }}
@@ -41,20 +23,9 @@
       href="{{ .url | safeURL }}"
       aria-label="{{ .name }}"
       class="{{ .name }}"
-      {{
-      if
-      .rel
-      }}rel="{{ .rel }}"
-      {{
-      end
-      }}
-      {{
-      if
-      .target
-      }}target="{{ .target }}"
-      {{
-      end
-      }}
+      {{ if .rel }} rel="{{ .rel }}" {{ end }}
+      {{ if .target }} target="{{ .target }}" {{ end }}
+      {{ if .type }} type="{{ .type }}" {{ end }}
       >{{ .name }}</a
     >
   </li>
