@@ -7,10 +7,11 @@
 
   <!-- Menu button multiligual -->
   {{ if .Site.Menus.main }}
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle">
-      <i class="fa fa-list fa-fw" aria-hidden="true"></i>
-    </label>
+    <input type="checkbox" class="menu-list" id="menu-toggle" aria-label="menu">
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-list fa-fw" aria-hidden="true"></i>
+      </label>
+    </input>
 
     <!-- Menu -->
     <ul class="nav-list">

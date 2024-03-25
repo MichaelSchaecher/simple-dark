@@ -81,13 +81,13 @@
       {{ partial "posts/prev-next.html" . }}
 
 
-      <footer>
+      <div class="comments">
         {{ partial "posts/comments/disqus.html" . }}
         {{ partial "posts/comments/commento.html" . }}
         {{ partial "posts/comments/utterances.html" . }}
         {{ partial "posts/comments/giscus.html" . }}
         {{ partial "posts/comments/telegram.html" . }}
-      </footer>
+      </div>
     </article>
   </section>
 
