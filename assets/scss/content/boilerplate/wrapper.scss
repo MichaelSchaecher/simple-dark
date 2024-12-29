@@ -3,6 +3,9 @@
   and have a max-width of 920px or 67% of the page: whichever is greater.
 */
 
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 .wrapper {
   max-width: rem(1080);
   margin: 0 auto;

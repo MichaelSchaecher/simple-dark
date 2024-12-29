@@ -1,8 +1,9 @@
-@import "post/index";
-@import "images";
-@import "fa-icons";
-// @import "copyright";
-@import "error";
-@import "about";
-@import "pagination";
-@import "post_list";
+@forward "boilerplate/index";
+@forward "post/index";
+@forward "about";
+@forward "article_header";
+@forward "error";
+@forward "fa-icons";
+@forward "images";
+@forward "pagination";
+@forward "post_list";

@@ -1,5 +1,8 @@
 // Tags and categories should be inline-block elements to allow for link animations.
 
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 .taxonomy-links {
   padding-top: rem(16);
 }

@@ -12,6 +12,9 @@
   more complete.
 */
 
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 // What to do before and after loading the page.
 *,
 *:before,

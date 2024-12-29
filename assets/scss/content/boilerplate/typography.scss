@@ -5,6 +5,9 @@
 
 // Inherit box-sizing from html
 
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 // Default link styles
 a {
   color: $link-color;

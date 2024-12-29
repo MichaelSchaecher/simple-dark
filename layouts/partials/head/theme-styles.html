@@ -8,11 +8,23 @@
   to use dart-sass transpiler because of how it handles the @font-face directive.
 -->
 {{ if .Site.IsServer }}
-  {{ $cssOpts := (dict "targetPath" "css/simple-dark.css" "enableSourceMap" true ) }}
-  {{ $styles := resources.Get "scss/simple-dark.scss" | resources.ExecuteAsTemplate "style.simple-dark.css" . | toCSS $cssOpts }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+  {{ $cssOpts := (dict "transpiler" "dartsass" "targetPath" "css/simple-dark.css" "enableSourceMap" true ) }}
+  {{ $styles := resources.Get "scss/simple-dark.scss" | resources.ExecuteAsTemplate "style.simple-dark.css" . |
+  toCSS $cssOpts  | minify | fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ $styles.RelPermalink }}"
+    media="screen"
+  />
 {{ else }}
-  {{ $cssOpts := (dict "targetPath" "css/simple-dark.css" ) }}
-  {{ $styles := resources.Get "scss/simple-dark.scss" | resources.ExecuteAsTemplate "style.simple-dark.css" . | toCSS $cssOpts | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+  {{ $cssOpts := (dict "transpiler" "dartsass" "targetPath" "css/simple-dark.css" ) }}
+  {{ $styles := resources.Get "scss/simple-dark.scss" | resources.ExecuteAsTemplate "style.simple-dark.css" . |
+  toCSS $cssOpts | minify | fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ $styles.RelPermalink }}"
+    integrity="{{ $styles.Data.Integrity }}"
+    crossorigin="anonymous"
+    media="screen"
+  />
 {{ end }}

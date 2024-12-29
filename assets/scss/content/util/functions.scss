@@ -8,5 +8,5 @@
 
 // Define a function to calculate the font default size of 16px to 1rem.
 @function rem($pixels) {
-  @return ($pixels / 16) * 1rem;
+  @return  calc($pixels / 16) * 1rem;
 }

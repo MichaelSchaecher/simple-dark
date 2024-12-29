@@ -6,6 +6,10 @@
 // See https://gohugo.io/content-management/shortcodes/#figure
 
 // Center the figure, image, and caption. Remember to keep the caption below the image.
+
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 .left {
   display: flex;
   flex-direction: column;
