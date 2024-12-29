@@ -1,4 +1,8 @@
-.comments {
+@use "../util/index" as *;
+@use "../style/index" as *;
+
+footer {
+
   // Center the comments on the page.
   text-align: center;
 

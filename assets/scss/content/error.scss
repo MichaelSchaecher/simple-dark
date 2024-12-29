@@ -5,6 +5,9 @@
 
 // Inherit box-sizing from html
 
+@use "util/index" as *;
+@use "style/index" as *;
+
 .not_found {
   // Align the text vertically and horizontally
   display: flex;

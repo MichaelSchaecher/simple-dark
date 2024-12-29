@@ -8,6 +8,9 @@
 // Use ../functions/_index.scss which contains the function rem() to convert pixels to
 // rems. See https://sass-lang.com/documentation/modules/math#
 
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 article {
   // Padding on top.
   margin-bottom: rem(24);

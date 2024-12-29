@@ -5,12 +5,15 @@
 
 // Inherit box-sizing from html
 
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 #nav {
   // Keep the nav from scrolling with the page.
-  position: fixed;
+  // position: fixed;
   line-height: rem(40);
-  top: 0;
-  z-index: 10;
+  // top: 0;
+  // z-index: 10;
 
   // The nav bar needs to stay within the wrapper and centered.
   width: 100%;

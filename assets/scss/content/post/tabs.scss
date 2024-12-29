@@ -9,6 +9,7 @@
 // rems. See https://sass-lang.com/documentation/modules/math#
 
 @use "../util/index" as *;
+@use "../style/index" as *;
 
 .tabs {
   display: flex;

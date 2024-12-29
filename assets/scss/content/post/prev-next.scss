@@ -1,3 +1,6 @@
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 // Previous and next buttons
 .prev-next {
   padding: rem(48) 0;

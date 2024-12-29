@@ -12,6 +12,9 @@
   more complete.
 */
 
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 // What to do before and after loading the page.
 *,
 *:before,
@@ -37,9 +40,15 @@ body {
   font-weight: 400;
   line-height: rem(20);
   overflow: auto !important;
+  max-width: rem(1080);
+  margin: 0 auto;
 
-  // The body should have any padding or margins.
-  margin: 0;
+  // Keep footer at the bottom of the page.
+  display: flex;
+  flex-direction: column;
+
+  // Push the footer to the bottom of the page.
+  min-height: 100vh;
 
   @include max {
     font-size: rem(14);

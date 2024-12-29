@@ -6,11 +6,15 @@
 // Inherit box-sizing from html
 
 // Define the look of the footer.
+
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 #footer-text {
   width: 100%;
   text-align: center;
   font-size: rem(16);
-  line-height: rem(40);
+  line-height: rem(32);
 
   // Reset the top and bottom margin:
   margin: 0 auto;

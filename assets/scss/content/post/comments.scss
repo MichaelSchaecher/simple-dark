@@ -1,0 +1,9 @@
+// How should comments be styled?
+
+@use "../util/index" as *;
+@use "../style/index" as *;
+
+.comments #disqus_thread {
+  margin: rem(42) auto;
+  text-align: center;
+}

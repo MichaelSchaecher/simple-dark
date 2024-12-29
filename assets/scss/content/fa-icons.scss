@@ -1,6 +1,10 @@
 // Use colors set for the social icons in assets/scss/util/style/colors.scss
 
 // Social icons don't have to standout with color, the icon itself is enough.
+
+@use "util/index" as *;
+@use "style/index" as *;
+
 .fa-brands {
   color: $social-color;
 }

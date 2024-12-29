@@ -3,16 +3,19 @@
   and have a max-width of 920px or 67% of the page: whichever is greater.
 */
 
+@use "../util/index" as *;
+@use "../style/index" as *;
+
 .wrapper {
-  max-width: rem(1080);
-  margin: 0 auto;
+  // max-width: rem(1080);
+  // margin: 0 auto;
 
-  // Keep footer at the bottom of the page.
-  display: flex;
-  flex-direction: column;
+  // // Keep footer at the bottom of the page.
+  // display: flex;
+  // flex-direction: column;
 
-  // Push the footer to the bottom of the page.
-  min-height: 100vh;
+  // // Push the footer to the bottom of the page.
+  // min-height: 100vh;
   background-color: $alt-bg-color;
 
   .container {
