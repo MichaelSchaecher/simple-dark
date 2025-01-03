@@ -1,7 +1,7 @@
-<!--  JavaScript for Font Awesome -->
-{{ with .Site.Params.fontawesomeKit }}
-  <script src="https://kit.fontawesome.com/{{ . }}.js" crossorigin="anonymous"></script>
-{{ end }}
+<!--
+  JavaScript for Font Awesome using the kit code. NOTE: This is only available if you have a Font Awesome account.
+-->
+{{ with .Site.Params.fontAwesomeCDN }} <link rel="stylesheet" href="{{ . }}" /> {{ end }}
 
 <!--
   Use default scss transpiler to generate the css file until I fix the issue with ForkAwesome unable
