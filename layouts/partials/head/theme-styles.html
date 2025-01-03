@@ -1,11 +1,6 @@
 <!--
   JavaScript for Font Awesome using the kit code. NOTE: This is only available if you have a Font Awesome account.
 -->
-{{ with .Site.Params.fontAwesomeKit }}
-  <script src="https://kit.fontawesome.com/{{ . }}.js" crossorigin="anonymous"></script>
-{{ end }}
-
-<!-- Use the Font Awesome CDN if it is set in the site configuration yaml file. -->
 {{ with .Site.Params.fontAwesomeCDN }} <link rel="stylesheet" href="{{ . }}" /> {{ end }}
 
 <!--

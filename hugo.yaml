@@ -89,7 +89,7 @@ params:
   # fontAwesomeKit:
 
   # Use cdnjs for Font Awesome icons
-  fontAwesomeCDN: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css
+  fontAwesomeCDN: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css
 
   # Custom CSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
   customSCSS:
@@ -118,42 +118,42 @@ params:
   math: true
 
   social:
-    - name: github
-      icon: fa-github
+    - name: Github
+      icon: fa-brands fa-github
       weight: 1
       url: https://github.com/
     - name: Gitlab
-      icon: fa-gitlab
+      icon: fa-brands fa-gitlab
       weight: 2
       url: https://gitlab.com/
     - name: Twitter
-      icon: fa-square-x-twitter
+      icon: fa-brands fa-twitter
       weight: 3
       url: https://twitter.com/
     - name: LinkedIn
-      icon: fa-linkedin
+      icon: fa-brands fa-linkedin
       weight: 4
       url: https://www.linkedin.com/
     - name: RSS
-      icon: fa-rss
+      icon: fa-solid fa-rss
       weight: 5
-      url: https://myhugosite.com/
+      url: ./index.xml
       rel: alternate
       type: application/rss+xml
     - name: Facebook
-      icon: fa-facebook-square
+      icon: fa-brands fa-facebook
       weight: 6
       url: https://www.facebook.com/
     - name: StackOverflow
-      icon: fa-stack-overflow
+      icon: fa-brands fa-stack-overflow
       weight: 7
       url: https://stackoverflow.com/
     - name: Instagram
-      icon: fa-instagram
+      icon: fa-brands fa-instagram
       weight: 8
       url: https://www.instagram.com/
     - name: reddit
-      icon: fa-reddit
+      icon: fa-brands fa-reddit
       weight: 9
       url: https://www.reddit.com/
 
